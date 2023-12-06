@@ -1,0 +1,246 @@
+#header{
+
+}
+#top-header{
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 0 290px;
+}
+
+.top-header-logo{
+    height: 100%;
+    padding: 0 10px;
+}
+
+.top-header-logo img{
+    height: 100%;
+    margin-right: 27px;
+}
+
+.top-header-center{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-right: 32px;
+    border-bottom: 1px solid #ccc ;
+    align-items: center;
+}
+.top-header-center .hotline-map{
+    font-size: 1.6rem;
+    color: #2af;
+    margin-right: 5px;
+}
+
+.top-header-center-hotline>span{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.top-header-center-hotline>a{
+    text-decoration: none;
+    color: #2af;
+    font-weight: 700;
+}
+
+.top-header-center-liststore>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.top-header-center-liststore>a:hover{
+    color: #2af;
+}
+
+.top-header-center-searchmember{
+    background: #f8f8f8;
+    padding: 6px;
+    border-radius: 6px ;
+    margin-bottom: 4px;
+}
+
+.top-header-center-searchmember>input{
+    border: none;
+    background: #f8f8f8;
+    width: 320px;
+    outline: none;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.top-header-center-searchmember>i{
+    color: #2af;
+}
+
+.top-header-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header-left-btn{
+    margin: 0 16px 0 0;
+    width: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.basket{
+    position: relative;
+}
+.basket p{
+    position: absolute;
+    background: #2af;
+    color: white;
+    font-size: 1.1rem;
+    top: -6px;
+    right: 10px ;
+    border-radius: 50%;
+    padding: 2px 4px;
+}
+
+.top-header-left-btn .top-header-left-btn-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #2af;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+.top-header-left-btn>span{
+    display: block;
+    font-size: 1rem;
+}
+/*end top-header*/
+
+/*start bottom-header*/
+.bottom-header {
+    background: #2af;
+    position: relative;
+}
+
+.bottom-header ul {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-header li{
+
+}
+
+.bottom-header ul li > a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 15px 38px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.bottom-header a:hover {
+    opacity: 0.9;
+}
+
+.bottom-header a:hover > i {
+    color: black;
+    transform: rotate(180deg);
+    animation: headerRotateHover ease-in-out 0.4s;
+}
+
+@keyframes headerRotateHover {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-180deg);
+    }
+}
+/*end bottom-heading*/
+/*start list-menu*/
+.list-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44px;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    padding: 10px;
+    max-height: 390px;
+    background: white;
+}
+
+.row{
+    width: 100%;
+}
+
+.list-train{
+    position: relative;
+}
+
+.list-train-member{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    box-shadow: 0 2px 6px 0 #22aaff;
+}
+
+.bottom-header li .list-train-member{
+    display: none;
+}
+
+.bottom-header li:hover>.list-train-member{
+    display: block;
+}
+
+.bottom-header .list-train-member>li>a{
+    display: block;
+    font-size: 1.4rem;
+    width: 250px;
+    color: #22aaff;
+    text-decoration: none;
+    text-align: left;
+    margin: 0 5px 5px;
+    padding:10px 15px 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.col-heading{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.col-header{
+    color: #22aaff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.col-footer{
+    color: #22aaff;
+    text-decoration: none;
+}
+
+.list-menu-member ul > li > a{
+    color: #333E44;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: unset;
+    height: 19px;
+}
+
+.bottom-header li:hover>.list-menu{
+    display: flex;
+}
