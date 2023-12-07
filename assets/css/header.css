@@ -250,3 +250,104 @@
 .bottom-header li:hover>.list-menu{
     display: flex;
 }
+
+.search-btn{
+    position: relative;
+}
+
+.search-btn:hover>.search-list{
+    display: block;
+}
+
+.search-list{
+    position: absolute;
+    top: 53px;
+    left: -100%;
+    background: white;
+    z-index: 3;
+    border-radius: 5px;
+    display: none;
+}
+
+.search-list a:hover{
+    color: white;
+    background: var(--color-primary);
+}
+
+.search-list a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    font-size: 1.4rem;
+    padding: 7px 5px 7px 15px;
+    border-radius: 4px;
+    margin: 1px;
+}
+
+.acc-btn{
+    position: relative;
+}
+
+.acc-list{
+    position: absolute;
+    top: 53px;
+    left: -37%;
+    background: white;
+    z-index: 3;
+    border-radius: 5px;
+    display: none;
+}
+
+.acc-list a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    font-size: 1.4rem;
+    padding: 7px 5px 7px 15px;
+    border-radius: 4px;
+    margin: 1px;
+}
+
+.acc-list a:hover{
+    color: white;
+    background: var(--color-primary);
+}
+
+.acc-btn:hover>.acc-list{
+    display: block;
+}
+
+.basket-list{
+    position: relative;
+}
+
+.basket-list:hover>.basket-member{
+    display: flex;
+}
+
+.basket-member{
+    position: absolute;
+    top: 53px;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    z-index: 3;
+    border-radius: 5px;
+    display: none;
+}
+.basket-member i{
+    font-size: 80px;
+    margin: 15px;
+}
+
+.basket-member span{
+    width: 340px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
