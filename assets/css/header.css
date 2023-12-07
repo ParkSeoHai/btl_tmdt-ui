@@ -1,12 +1,9 @@
-#header{
 
-}
 #top-header{
     height: 80px;
     background: #ffffff;
     display: flex;
     align-items: center;
-    margin: 0 290px;
 }
 
 .top-header-logo{
@@ -132,15 +129,19 @@
     justify-content: center;
 }
 
-.bottom-header li{
-
+.bottom-header ul li {
+    display: flex;
+    align-items: center;
 }
 
-.bottom-header ul li > a {
+.bottom-header li > a.dropdown{
     display: flex;
     align-items: center;
     gap: 4px;
-    padding: 15px 38px;
+}
+
+.bottom-header ul li > a {
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -178,6 +179,7 @@
     padding: 10px;
     max-height: 390px;
     background: white;
+    z-index: 2;
 }
 
 .row{
@@ -192,6 +194,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 2;
+    background: #fff;
     top: 45px;
     box-shadow: 0 2px 6px 0 #22aaff;
 }
