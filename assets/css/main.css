@@ -85,7 +85,7 @@ a{
   position: relative;
   display: inline-block;
   margin: 0;
-  font-size: 26px;
+  font-size: 2rem;
   padding-bottom: 20px;
 }
 .title-new-product{
@@ -162,7 +162,7 @@ a{
   color: inherit;
   font-weight: 700;
   text-decoration: unset;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 36px;
   overflow: hidden;
   display: -webkit-box;
@@ -469,7 +469,7 @@ a{
 }
 @media (max-width: 1199px)
 .item_product_main .product-info h3{
-  font-size: 14px;
+  font-size: 1rem;
 }
 .item_product_main .product-info h3{
   padding: 0;
@@ -496,7 +496,7 @@ a{
   color: #e8002d;
   line-height: 23px;
   display: block;
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 500;
   min-height: 25px;
 }
