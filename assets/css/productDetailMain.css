@@ -1,0 +1,152 @@
+
+.section-breadcrumb {
+    padding: 15px 0;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-main a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 1.4rem;
+}
+
+.breadcrumb-main .active {
+    color: #e95211;
+    font-size: 1.4rem;
+}
+
+.breadcrumb-main a:hover {
+    color: #e95211;
+}
+
+.product-detail-left .img-main {
+    width: 100%;
+}
+
+.product-detail-left .swiper-slide {
+    width: 62.6px;
+    margin-right: 10px;
+    padding: 8px 4px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.product-detail-left .swiper-slide:hover {
+    border-color: #e95211;
+}
+
+.product-detail-left .swiper-slide.swiper-slide-thumb-active {
+    border: 1px solid #e95211;
+    cursor: default;
+}
+
+.product-detail-left .swiper-slide img {
+    width: 100%;
+}
+
+.product-detail-right .title-product {
+    font-size: 2.4rem;
+    margin: 0 0 5px;
+    line-height: 36px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.product-detail-right .product-top {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.product-detail-right .product-top .code {
+    color: #e95211;
+}
+
+.product-detail-right .inventory_quantity {
+    color: #666;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.product-detail-right .inventory_quantity .a-vendor {
+    text-decoration: none;
+    color: #e95211;
+}
+
+.product-detail-right .inventory_quantity .a-stock {
+    color: #e95211;
+}
+
+.product-detail-right .inventory_quantity .line {
+    display: inline-block;
+    height: 14px;
+    border: 1px solid #666;
+    margin: 0 12px;
+}
+
+.product-detail-right .price-box {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-detail-right .price-box .special-price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e8002d;
+    margin-right: 12px;
+}
+
+.product-detail-right .price-box .old-price {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+.product-detail-right .pro-discount {
+    position: relative;
+    padding: 12px;
+    border: 1px solid #e95211;
+    border-radius: 5px;
+    background: rgba(1,86,127,0.02);
+}
+
+.product-detail-right .pro-discount p {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #555555;
+    line-height: 22px;
+}
+
+.product-detail-right .pro-discount .icon {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #026e02;
+    line-height: 22px;
+    margin-right: 6px;
+}
+
+.product-detail-right .pro-discount .icon.red {
+    color: #bd0606;
+}
+
+.product-detail-right .uu_dai {
+    position: absolute;
+    top: -5%;
+    color: #E95221;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    padding: 3px 10px;
+}
+
+.product-detail-right .uu_dai img {
+    max-width: 23px;
+    mix-blend-mode: multiply;
+    vertical-align: -3px;
+}
