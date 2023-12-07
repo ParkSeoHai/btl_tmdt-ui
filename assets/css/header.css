@@ -6,7 +6,6 @@
     background: #ffffff;
     display: flex;
     align-items: center;
-    margin: 0 290px;
 }
 
 .top-header-logo{
@@ -178,6 +177,7 @@
     padding: 10px;
     max-height: 390px;
     background: white;
+    z-index: 2;
 }
 
 .row{
@@ -198,6 +198,8 @@
 
 .bottom-header li .list-train-member{
     display: none;
+    background: white;
+    z-index: 2;
 }
 
 .bottom-header li:hover>.list-train-member{
