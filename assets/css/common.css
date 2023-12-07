@@ -1,0 +1,21 @@
+/* Common */
+.section-breadcrumb {
+    padding: 15px 0;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-main a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 1.4rem;
+}
+
+.breadcrumb-main .active {
+    color: #e95211;
+    font-size: 1.4rem;
+}
+
+.breadcrumb-main a:hover {
+    color: #e95211;
+}

@@ -25,7 +25,7 @@
 
 #footer .des_foo b {
     font-weight: 600;
-    color: #e95211;
+    color: var(--color-primary);
 }
 
 #footer .des_foo em {
@@ -48,5 +48,5 @@
 }
 
 #footer .list a:hover {
-    color: #e95211;
+    color: var(--color-primary);
 }
