@@ -12,10 +12,10 @@
 }
 
 .breadcrumb-main .active {
-    color: #e95211;
+    color: var(--color-primary);
     font-size: 1.4rem;
 }
 
 .breadcrumb-main a:hover {
-    color: #e95211;
+    color: var(--color-primary);
 }
