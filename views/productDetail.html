@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/font.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href="/assets/css/color.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/productDetailMain.css">
@@ -198,7 +199,7 @@
                 <div class="details-product">
                     <div class="row">
                         <div class="col-lg-9 col-md-9 col-sm-12">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center mb-4">
                                 <div class="product-detail-left col-5">
                                     <div class="img">
                                         <img src="../assets/img/product-detail-1.webp" alt="" class="img-main">
@@ -289,22 +290,38 @@
                                     </div>
                                     <form class="form-product">
                                         <fieldset class="title">Chọn size:</fieldset>
-                                        <div class="select-size">
+                                        <div class="select-size d-flex gap-2 pt-3">
                                             <div class="item">
-                                                <input type="radio" class="btn-check" name="options-base" id="size-36" autocomplete="off">
-                                                <label class="btn" for="size-36">36</label>
+                                                <input type="radio" checked class="btn-check" name="options-base" id="size-36" autocomplete="off">
+                                                <label class="btn btn-size" for="size-36">36</label>
                                             </div>
                                             <div class="item">
                                                 <input type="radio" class="btn-check" name="options-base" id="size-37" autocomplete="off">
-                                                <label class="btn" for="size-37">37</label>
+                                                <label class="btn btn-size" for="size-37">37</label>
                                             </div>
                                             <div class="item">
                                                 <input type="radio" class="btn-check" name="options-base" id="size-38" autocomplete="off">
-                                                <label class="btn" for="size-38">38</label>
+                                                <label class="btn btn-size" for="size-38">38</label>
                                             </div>
                                             <div class="item">
                                                 <input type="radio" class="btn-check" name="options-base" id="size-39" autocomplete="off">
-                                                <label class="btn" for="size-39">39</label>
+                                                <label class="btn btn-size" for="size-39">39</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="radio" class="btn-check" name="options-base" id="size-40" autocomplete="off">
+                                                <label class="btn btn-size" for="size-40">40</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div class="number-cart">
+                                                <div class="input_number_product">
+                                                    <button type="button" class="btn-minus rounded-circle">-</button>
+                                                    <input type="text" value="1" min="1" maxlength="3" minlength="1">
+                                                    <button type="button" class="btn-minus rounded-circle">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="btn-add_cart">
+                                                <button type="submit" class="btn btn-outline-add">THÊM VÀO GIỎ HÀNG</button>
                                             </div>
                                         </div>
                                     </form>
