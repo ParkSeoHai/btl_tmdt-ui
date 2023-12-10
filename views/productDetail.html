@@ -206,21 +206,33 @@
                                     </div>
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper d-flex">
-                                            <div class="swiper-slide swiper-slide-thumb-active">
-                                                <img src="../assets/img/swiper-slide-1.webp" alt="">
+                                            <div class="swiper-slide swiper-slide-thumb-active" tabindex="1">
+                                                <img src="../assets/img/product-detail-1.webp" alt="">
                                             </div>
-                                            <div class="swiper-slide">
-                                                <img src="../assets/img/swiper-slide-1.webp" alt="">
+                                            <div class="swiper-slide" tabindex="2">
+                                                <img src="../assets/img/product-detail-2.webp" alt="">
                                             </div>
-                                            <div class="swiper-slide">
-                                                <img src="../assets/img/swiper-slide-1.webp" alt="">
+                                            <div class="swiper-slide" tabindex="3">
+                                                <img src="../assets/img/product-detail-3.webp" alt="">
                                             </div>
-                                            <div class="swiper-slide">
-                                                <img src="../assets/img/swiper-slide-1.webp" alt="">
+                                            <div class="swiper-slide" tabindex="4">
+                                                <img src="../assets/img/product-detail-4.webp" alt="">
                                             </div>
-                                            <div class="swiper-slide">
-                                                <img src="../assets/img/swiper-slide-1.webp" alt="">
+                                            <div class="swiper-slide" tabindex="5">
+                                                <img src="../assets/img/product-detail-5.webp" alt="">
                                             </div>
+                                            <div class="swiper-slide" tabindex="6">
+                                                <img src="../assets/img/product-detail-6.webp" alt="">
+                                            </div>
+                                            <div class="swiper-slide" tabindex="7">
+                                                <img src="../assets/img/product-detail-7.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button next">
+                                            <i class="bi bi-chevron-right"></i>
+                                        </div>
+                                        <div class="swiper-button prev">
+                                            <i class="bi bi-chevron-left"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -315,9 +327,11 @@
                                         <div class="d-flex align-items-center mt-3">
                                             <div class="number-cart">
                                                 <div class="input_number_product">
-                                                    <button type="button" class="btn-minus rounded-circle">-</button>
+                                                    <button type="button" class="btn-minus rounded-circle"
+                                                            onclick="document.querySelector('.input_number_product input').value--">-</button>
                                                     <input type="text" value="1" min="1" maxlength="3" minlength="1">
-                                                    <button type="button" class="btn-minus rounded-circle">+</button>
+                                                    <button type="button" class="btn-minus rounded-circle"
+                                                            onclick="document.querySelector('.input_number_product input').value++">+</button>
                                                 </div>
                                             </div>
                                             <div class="btn-add_cart">
@@ -413,5 +427,6 @@
     </footer>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/product_detail.js"></script>
 </body>
 </html>
