@@ -57,10 +57,12 @@ a{
 #carouselExampleSlidesOnly{
   margin-bottom: 30px;
 }
-.bi{
+
+#services .new-product-box i {
   color: var(--color-primary);
   font-size: 2rem;
 }
+
 #new-product{
   margin-bottom: 30px;
 }
