@@ -1,25 +1,4 @@
 
-.section-breadcrumb {
-    padding: 15px 0;
-    background: #f5f5f5;
-    margin-bottom: 20px;
-}
-
-.breadcrumb-main a {
-    text-decoration: none;
-    color: #555555;
-    font-size: 1.4rem;
-}
-
-.breadcrumb-main .active {
-    color: #e95211;
-    font-size: 1.4rem;
-}
-
-.breadcrumb-main a:hover {
-    color: #e95211;
-}
-
 .product-detail-left .img-main {
     width: 100%;
 }
@@ -149,4 +128,61 @@
     max-width: 23px;
     mix-blend-mode: multiply;
     vertical-align: -3px;
+}
+
+.product-detail-right .form-product {
+    margin-top: 30px;
+}
+
+.product-detail-right .form-product .title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product-detail-right .form-product .btn-size {
+    font-size: 1.3rem;
+    color: #333;
+    border: 1px solid #eee;
+}
+
+.product-detail-right .form-product input:checked ~ .btn-size {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.product-detail-right .btn-minus {
+    background-color: var(--color-primary);
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    border: none;
+}
+
+.product-detail-right .input_number_product input {
+    width: 90px;
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    padding: 6px 0;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.product-detail-right .input_number_product input:focus-visible {
+    outline: 1px solid var(--color-primary);
+}
+
+.product-detail-right .btn-outline-add {
+    margin-left: 12px;
+    font-size: 12px;
+    padding: 6px 40px;
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.product-detail-right .btn-outline-add:hover {
+    color: var(--color-primary);
+    background-color: #fff;
+    border: 1px solid var(--color-primary);
 }

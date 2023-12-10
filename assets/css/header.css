@@ -253,6 +253,7 @@
 
 .search-btn{
     position: relative;
+    cursor: pointer;
 }
 
 .search-btn:hover>.search-list{
@@ -261,12 +262,24 @@
 
 .search-list{
     position: absolute;
-    top: 53px;
-    left: -100%;
+    top: 46px;
     background: white;
     z-index: 3;
     border-radius: 5px;
     display: none;
+    box-shadow: rgba(0,0,0,0.18) 0 6px 12px 0;
+    border: 1px solid #efefef;
+}
+
+.arrow-menu:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--color-primary);
 }
 
 .search-list a:hover{
@@ -287,23 +300,26 @@
 
 .acc-btn{
     position: relative;
+    cursor: pointer;
 }
 
 .acc-list{
     position: absolute;
-    top: 53px;
-    left: -37%;
+    top: 46px;
     background: white;
     z-index: 3;
     border-radius: 5px;
     display: none;
+    box-shadow: rgba(0,0,0,0.18) 0 6px 12px 0;
+    border: 1px solid #efefef;
 }
 
 .acc-list a{
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: black;
-    width: 100px;
+    color: #000;
+    min-width: 125px;
     font-size: 1.4rem;
     padding: 7px 5px 7px 15px;
     border-radius: 4px;
@@ -315,12 +331,21 @@
     background: var(--color-primary);
 }
 
+.acc-list a span {
+    margin-left: 6px;
+}
+
+.acc-list .icon {
+    font-size: 2rem;
+}
+
 .acc-btn:hover>.acc-list{
     display: block;
 }
 
 .basket-list{
     position: relative;
+    cursor: pointer;
 }
 
 .basket-list:hover>.basket-member{
@@ -329,7 +354,7 @@
 
 .basket-member{
     position: absolute;
-    top: 53px;
+    top: 46px;
     right: 0;
     justify-content: center;
     align-items: center;
@@ -338,6 +363,8 @@
     z-index: 3;
     border-radius: 5px;
     display: none;
+    box-shadow: rgba(0,0,0,0.18) 0 6px 12px 0;
+    border: 1px solid #efefef;
 }
 .basket-member i{
     font-size: 80px;
