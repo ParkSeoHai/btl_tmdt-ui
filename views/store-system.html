@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hệ thống cửa hàng</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/font.css">
+  <link rel="stylesheet" href="../assets/css/color.css">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+</head>
+<body>
+<!--header-->
+<header id="header">
+  <!--Top header-->
+  <div class="container">
+    <div id="top-header">
+      <div class="top-header-logo">
+        <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+      </div>
+      <div class="top-header-center">
+        <div class="top-header-center-hotline">
+          <i class="hotline-map bi bi-telephone-fill"></i>
+          <span>HOTLINE:</span>
+          <a href="">0379885603 | 0333301536</a>
+        </div>
+        <div class="top-header-center-liststore">
+          <i class="hotline-map bi bi-map-fill"></i>
+          <a href="">HỆ THỐNG CỬA HÀNG</a>
+        </div>
+        <div class="top-header-center-searchmember">
+          <input type="text" placeholder="Tìm sản phẩm...">
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
+      <div class="top-header-left">
+        <div class="top-header-left-btn search-btn">
+          <div class="top-header-left-btn-icon">
+            <i class="bi bi-binoculars-fill"></i>
+          </div>
+          <span>TRA CỨU</span>
+          <div class="search-list">
+            <ul>
+              <li><a href="">Kiểm tra đơn hàng</a></li>
+              <li><a href="">Kiểm tra bảo hành</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-header-left-btn acc-btn">
+          <div class="top-header-left-btn-icon">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <span>TÀI KHOẢN</span>
+          <div class="acc-list">
+            <ul>
+              <li><a href="">Đăng nhập</a></li>
+              <li><a href="">Đăng kí</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="basket top-header-left-btn basket-list">
+          <div class="top-header-left-btn-icon">
+            <i class="bi bi-cart-fill"></i>
+            <p>0</p>
+          </div>
+          <span>GIỎ HÀNG</span>
+          <div class="basket-member">
+            <i class="bi bi-bag-plus"></i>
+            <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-header">
+    <ul>
+      <li><a href="">TRANG CHỦ</a></li>
+      <li class="bottom-header-listmember">
+        <a href="" class="dropdown">SẢN PHẨM
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <div class="list-menu">
+          <div class="row">
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">VỢT CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Vợt cầu lông Yonex</a></li>
+                <li><a href="">Vợt cầu lông Victor</a></li>
+                <li><a href="">Vợt cầu lông Lining</a></li>
+                <li><a href="">Vợt Cầu Lông Mizuno</a></li>
+                <li><a href="">Vợt Cầu Lông Apacs</a></li>
+                <li><a href="">Vợt Cầu Lông VNB</a></li>
+                <li><a href="">Vợt cầu lông Proace</a></li>
+                <li><a href="">Vợt cầu lông Forza</a></li>
+                <li><a href="">Vợt Cầu Lông FlyPower</a></li>
+                <li><a href="">Vợt Cầu Lông Tenway</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">GIÀY CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Giày cầu lông Yonex</a></li>
+                <li><a href="">Giày cầu lông Victor</a></li>
+                <li><a href="">Giày cầu lông Lining</a></li>
+                <li><a href="">Giày Cầu Lông Kawasaki</a></li>
+                <li><a href="">Giày Cầu Lông Mizuno</a></li>
+                <li><a href="">Giày Cầu Lông Kumpoo</a></li>
+                <li><a href="">Giày cầu lông Promax</a></li>
+                <li><a href="">Giày cầu lông Babolat</a></li>
+                <li><a href="">Giày Cầu Lông Sunbatta</a></li>
+                <li><a href="">Giày Cầu Lông Apacs</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">ÁO CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Áo cầu lông Yonex</a></li>
+                <li><a href="">Áo cầu lông VNB</a></li>
+                <li><a href="">Áo cầu lông Kamito</a></li>
+                <li><a href="">Áo Cầu Lông Victo</a></li>
+                <li><a href="">Áo Cầu Lông Lining</a></li>
+                <li><a href="">Áo Cầu Lông DonexPro</a></li>
+                <li><a href="">Áo cầu lông Alien Armour</a></li>
+                <li><a href="">Áo cầu lông SFD</a></li>
+                <li><a href="">Áo Cầu Lông Kawasaki</a></li>
+                <li><a href="">Áo Cầu Lông Pebble Beach</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">VÁY CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Váy cầu lông Yonex</a></li>
+                <li><a href="">Váy cầu lông Victec</a></li>
+                <li><a href="">Váy cầu lông Lining</a></li>
+                <li><a href="">Váy Cầu Lông DonexPro</a></li>
+                <li><a href="">Váy Cầu Lông Victor</a></li>
+              </ul>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">QUẦN CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Quần cầu lông Yonex</a></li>
+                <li><a href="">Quần cầu lông Victor</a></li>
+                <li><a href="">Quần cầu lông Lining</a></li>
+                <li><a href="">Quần Cầu Lông VNB</a></li>
+                <li><a href="">Quần Cầu Lông SFD</a></li>
+                <li><a href="">Quần Cầu Lông DonexPro</a></li>
+                <li><a href="">Quần cầu lông Apacs</a></li>
+                <li><a href="">Quần cầu lông Alien Amour</a></li>
+                <li><a href="">Quần Cầu Lông Mizuno</a></li>
+                <li><a href="">Quần Cầu Lông Kawasaki</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="">SALE OFF</a></li>
+      <li><a href="">TIN TỨC</a></li>
+      <li><a href="">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
+      <li class="list-train">
+        <a href="" class="dropdown">HƯỚNG DẪN
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <ul class="list-train-member">
+          <li><a href="">Hướng dẫn thanh toán</a></li>
+          <li><a href="">Hướng dẫn mua hàng</a></li>
+          <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+          <li><a href="">Công nghệ sản phẩm</a></li>
+        </ul>
+      </li>
+      <li><a href="">GIỚI THIỆU</a></li>
+      <li><a href="">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+</header>
+<!--body-->
+<div class="bodywrap">
+  <section class="page page-store">
+    <div class="container text-center" style="width: 80%;min-height: 1000px">
+      <div class="row">
+        <div class="col-sm-4" style="background-color: #22aaff;padding-bottom: 20px">
+          <form>
+            <select style="font-size: 1.5rem; margin: 10px; width: 90%; padding: 5px 0; border-radius: 5px">
+              <option >Chọn tỉnh thành</option>
+              <option >Hà Nội</option>
+              <option >TP Hồ Chí Minh</option>
+              <option >Trà Vinh</option>
+              <option >Tuyên Quang</option>
+              <option >Vĩnh Long</option>
+              <option >Vĩnh Phúc</option>
+              <option >Yên Bái</option>
+              <option >Thanh Hóa</option>
+              <option >Thái Nguyên</option>
+              <option >Thái Bình</option>
+              <option >Tây Ninh</option>
+              <option >Sơn La</option>
+            </select>
+            <select style="font-size: 1.5rem; margin: 10px; width: 90%; padding: 5px 0; border-radius: 5px">
+              <option >Chọn Quận/Huyện</option>
+              <option >Hà Nội</option>
+              <option >TP Hồ Chí Minh</option>
+              <option >Trà Vinh</option>
+              <option >Tuyên Quang</option>
+              <option >Vĩnh Long</option>
+              <option >Vĩnh Phúc</option>
+              <option >Yên Bái</option>
+              <option >Thanh Hóa</option>
+              <option >Thái Nguyên</option>
+              <option >Thái Bình</option>
+              <option >Tây Ninh</option>
+              <option >Sơn La</option>
+            </select>
+          <div class="info-store info-block">
+            <div class="store-list">
+              <div class="store-name">
+                <b>
+                  <a href="https://maps.app.goo.gl/Dt6M1PxBSnz6CsF99">
+                    CỬA HÀNG CỦA HUY
+                  </a>
+                </b>
+                <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Khu E6, Phạm Hùng, Cầu Giấy, Hà Nội, Việt Nam
+                </span>
+                <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0379625667
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/ndXDXZ9gTfDraNMK9">
+                      CỬA HÀNG CỦA HIẾU
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  4F7V+M4W, Thanh Vị, Sơn Tây, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0379885603
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/V9nC16pdvEysj74k9">
+                      CỬA HÀNG CỦA HẢI
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  2PRR+2Q Nam Từ Liêm, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0333301536
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/Dt6M1PxBSnz6CsF99">
+                      CỬA HÀNG CỦA HUY
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Khu E6, Phạm Hùng, Cầu Giấy, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0379625667
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/ndXDXZ9gTfDraNMK9">
+                      CỬA HÀNG CỦA HIẾU
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  4F7V+M4W, Thanh Vị, Sơn Tây, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0379885603
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/V9nC16pdvEysj74k9">
+                      CỬA HÀNG CỦA HẢI
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  2PRR+2Q Nam Từ Liêm, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0333301536
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/Dt6M1PxBSnz6CsF99">
+                      CỬA HÀNG CỦA HUY
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Khu E6, Phạm Hùng, Cầu Giấy, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0379625667
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/ndXDXZ9gTfDraNMK9">
+                      CỬA HÀNG CỦA HIẾU
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  4F7V+M4W, Thanh Vị, Sơn Tây, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0379885603
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          <div class="info-store info-block">
+              <div class="store-list">
+                <div class="store-name">
+                  <b>
+                    <a href="https://maps.app.goo.gl/V9nC16pdvEysj74k9">
+                      CỬA HÀNG CỦA HẢI
+                    </a>
+                  </b>
+                  <span>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  2PRR+2Q Nam Từ Liêm, Hà Nội, Việt Nam
+                </span>
+                  <span>
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                  <a href="tel:0379625667">
+                    0333301536
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.816814555947!2d105.73938337484935!3d21.040014487392746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1702226502180!5m2!1svi!2s" width="1000" height="1200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
+    </div>
+<!--footer-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h4 class="title-menu">Thông tin chung</h4>
+        <div class="des_foo">
+          <p>
+            <b>VNB Sports</b>
+            là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp
+            sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp
+          </p>
+          <p>
+            <b>Với sứ mệnh:</b>
+            <em>
+              "VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho
+              người chơi thể thao để nâng cao sức khỏe của chính mình."
+            </em>
+          </p>
+          <p>
+            <b>Tầm nhìn:</b>
+            <em>
+              "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"
+            </em>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 ps-4">
+        <h4 class="title-menu">Thông tin liên hệ</h4>
+        <div class="des_foo">
+          <p>
+            <b>Nguyễn Văn Hải</b>
+          </p>
+          <p>
+            <b>Đỗ Minh Hiếu</b>
+          </p>
+          <p>
+            <b>Phan Đức Huy</b>
+          </p>
+          <p>
+            <b>Hotline:</b>
+            0355063692 | 0785277320
+          </p>
+          <p>
+            <b>Email:</b>
+            info@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h4 class="title-menu">Chính sách</h4>
+        <ul class="list">
+          <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+          <li class="item"><a href="#">Chính sách bảo hành</a></li>
+          <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+          <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+          <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+          <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h4 class="title-menu">Hướng dẫn</h4>
+        <ul class="list">
+          <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+          <li class="item"><a href="#">Chính sách bảo hành</a></li>
+          <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+          <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+          <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+          <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>
