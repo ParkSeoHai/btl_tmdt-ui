@@ -764,4 +764,40 @@ a{
     color: var(--color-primary);
 }
 /*end-register-view*/
-
+/*store-system*/
+.page-store .info-store{
+  margin-top: 15px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.page-store .info-store .store-list{
+  background: #fff;
+  padding: 0 0 0 5px;
+  line-height: 2rem;
+  border-bottom: dashed 1px #F2F2F2;
+  cursor: pointer;
+}
+.page-store .info-store .store-list:hover{
+  background-color: #90d3fd;
+}
+.page-store .info-store .store-list .store-name{
+  position: relative;
+  display: inline-block;
+  padding: 10px 5px;
+}
+.page-store .info-store .store-list .store-name b{
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+.page-store .info-store .store-list .store-name span{
+  position: relative;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  color: #747474;
+  width: 100%;
+  display: inline-block;
+}
