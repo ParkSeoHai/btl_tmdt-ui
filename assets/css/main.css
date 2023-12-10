@@ -460,3 +460,122 @@
     color: var(--color-primary);
 }
 /*end-register-view*/
+
+/*start-train-pay*/
+.train-pay{
+    width: 50%;
+}
+.train-pay>h1{
+    color: #333333;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0 0 15px;
+    text-align: left;
+}
+.train-pay>i{
+    color: #acacac;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 23.8px;
+    margin: 0 10px 15px 0;
+    text-align: left;
+}
+
+.train-pay>strong{
+    color: #333e44;
+    display: block;
+    font-weight: 700;
+    line-height: 27.2px;
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.train-pay>p{
+    color: #333e44;
+    font-size: 1.8rem;
+    line-height: 23.8px;
+    margin: 0 0 15px;
+    text-align: left;
+}
+/*end-train-pay*/
+
+/*start-contact-view*/
+.contact-view{
+}
+
+.contact-view > h4{
+    width: 640px;
+    color: #333e44;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 0px 0px 13px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.contact-view > b{
+    color: #333e44;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 23.8px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.contact-view > a{
+    color: #01567f;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23.8px;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-view > a:hover{
+    color: var(--color-primary);
+}
+
+.contact-view .contact-view-sdt{
+    width: 620px;
+}
+
+.contact-view > input{
+    background-color: #ffffff;
+    border-color: #e1e1e1;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #1c1c1c;
+    font-size: 14px;
+    line-height: 23.8px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 5px 20px;
+    width: 300px;
+}
+
+.contact-view > button{
+    align-items: flex-start;
+    background-color: #01567f;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 35px;
+    padding: 0px 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.contact-view > button:hover{
+    background: var(--color-primary);
+}
+/*end-contact-view*/
