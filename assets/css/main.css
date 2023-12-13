@@ -124,13 +124,13 @@ a{
   background: white;
 }
 .swiper-wrapper{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property:transform;
-  box-sizing: content-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property:transform;
+    box-sizing: content-box;
 }
 .swiper-slide{
   flex-shrink: 0;
