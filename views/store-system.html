@@ -1,8 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hệ thống cửa hàng</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
@@ -14,13 +17,14 @@
   <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 <body>
-<!--header-->
+<!-- Header -->
 <header id="header">
-  <!--Top header-->
   <div class="container">
     <div id="top-header">
       <div class="top-header-logo">
-        <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+        <a href="../index.html">
+          <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+        </a>
       </div>
       <div class="top-header-center">
         <div class="top-header-center-hotline">
@@ -30,7 +34,7 @@
         </div>
         <div class="top-header-center-liststore">
           <i class="hotline-map bi bi-map-fill"></i>
-          <a href="">HỆ THỐNG CỬA HÀNG</a>
+          <a href="../views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
         </div>
         <div class="top-header-center-searchmember">
           <input type="text" placeholder="Tìm sản phẩm...">
@@ -43,10 +47,10 @@
             <i class="bi bi-binoculars-fill"></i>
           </div>
           <span>TRA CỨU</span>
-          <div class="search-list">
+          <div class="search-list arrow-menu">
             <ul>
-              <li><a href="">Kiểm tra đơn hàng</a></li>
-              <li><a href="">Kiểm tra bảo hành</a></li>
+              <li><a href="../views/search-orders.html">Kiểm tra đơn hàng</a></li>
+              <li><a href="../views/search-warranty.html">Kiểm tra bảo hành</a></li>
             </ul>
           </div>
         </div>
@@ -55,14 +59,24 @@
             <i class="bi bi-person-circle"></i>
           </div>
           <span>TÀI KHOẢN</span>
-          <div class="acc-list">
+          <div class="acc-list arrow-menu">
             <ul>
-              <li><a href="">Đăng nhập</a></li>
-              <li><a href="">Đăng kí</a></li>
+              <li>
+                <a href="../views/login-view.html">
+                  <i class="bi bi-box-arrow-in-right icon"></i>
+                  <span>Đăng nhập</span>
+                </a>
+              </li>
+              <li>
+                <a href="../views/register-view.html">
+                  <i class="bi bi-person-add icon"></i>
+                  <span>Đăng ký</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="basket top-header-left-btn basket-list">
+        <a href="../views/shopping-cart.html"><div class="basket top-header-left-btn basket-list">
           <div class="top-header-left-btn-icon">
             <i class="bi bi-cart-fill"></i>
             <p>0</p>
@@ -72,13 +86,13 @@
             <i class="bi bi-bag-plus"></i>
             <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
           </div>
-        </div>
+        </div></a>
       </div>
     </div>
   </div>
   <div class="bottom-header">
     <ul>
-      <li><a href="">TRANG CHỦ</a></li>
+      <li><a href="../index.html">TRANG CHỦ</a></li>
       <li class="bottom-header-listmember">
         <a href="" class="dropdown">SẢN PHẨM
           <i class="bi bi-chevron-down"></i>
@@ -180,21 +194,20 @@
           <i class="bi bi-chevron-down"></i>
         </a>
         <ul class="list-train-member">
-          <li><a href="">Hướng dẫn thanh toán</a></li>
-          <li><a href="">Hướng dẫn mua hàng</a></li>
+          <li><a href="../views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
           <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
           <li><a href="">Công nghệ sản phẩm</a></li>
         </ul>
       </li>
       <li><a href="">GIỚI THIỆU</a></li>
-      <li><a href="">LIÊN HỆ</a></li>
+      <li><a href="../views/contact-view.html">LIÊN HỆ</a></li>
     </ul>
   </div>
 </header>
 <!--body-->
 <div class="bodywrap">
   <section class="page page-store">
-    <div class="container text-center" style="width: 80%;min-height: 1000px">
+    <div class="container text-center" style="width: 80%;min-height: 650px">
       <div class="row">
         <div class="col-sm-4" style="background-color: #22aaff;padding-bottom: 20px">
           <form>
@@ -228,6 +241,8 @@
               <option >Tây Ninh</option>
               <option >Sơn La</option>
             </select>
+            <div class="info-store-list">
+
           <div class="info-store info-block">
             <div class="store-list">
               <div class="store-name">
@@ -417,9 +432,10 @@
                 </div>
               </div>
             </div>
+            </div>
           </form>
         </div>
-        <div class="col-sm-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.816814555947!2d105.73938337484935!3d21.040014487392746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1702226502180!5m2!1svi!2s" width="1000" height="1200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="col-sm-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.816814555947!2d105.73938337484935!3d21.040014487392746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1702226502180!5m2!1svi!2s" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </div>
     </div>
   </section>
