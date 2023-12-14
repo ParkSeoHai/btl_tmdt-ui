@@ -917,5 +917,19 @@ a{
     font-size: 1.4rem;
     color: var(--color-primary);
 }
+
+.infomation-menu{
+    background: #f7f8f9;
+    margin-bottom: 16px;
+}
+
+.infomation-menu span{
+    display: block;
+    color: #333e44;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    padding: 15px 0 0 15px;
+}
 /*end-infomation-badminton*/
-/*end-contact-view*/

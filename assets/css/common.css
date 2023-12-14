@@ -103,7 +103,7 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 22px;
-=======
+}
 /* Nav category */
 .nav-category {
     padding: 15px;
@@ -176,4 +176,4 @@ a {
         opacity: 1;
         max-height: 300px;
     }
-}}
+}
