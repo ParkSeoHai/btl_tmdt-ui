@@ -1,3 +1,10 @@
+@import "./reset.css";
+@import "./color.css";
+@import "./font.css";
+@import "./common.css";
+@import "./header.css";
+@import "./footer.css";
+
 a{
   text-decoration: none;
 }
@@ -471,9 +478,10 @@ a{
   margin: 5px 0 5px;
   position: relative;
 }
-@media (max-width: 1199px)
-.item_product_main .product-info h3{
-  font-size: 1rem;
+@media (max-width: 1199px) {
+  .item_product_main .product-info h3 {
+    font-size: 1rem;
+  }
 }
 .item_product_main .product-info h3{
   padding: 0;
@@ -648,10 +656,12 @@ a{
   box-shadow: 0 1px 2px rgba(0,0,0,0.08);
   margin-bottom: 0;
 }
-@media (min-height: 992px).col-lg-12 {
-                            flex: 0 0 100%;
-                            max-width: 100%;
-                          }
+@media (min-height: 992px) {
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .clearfix::after{
   display: block;
   clear: both;
@@ -847,9 +857,6 @@ a{
 /*end-train-pay*/
 
 /*start-contact-view*/
-.contact-view{
-}
-
 .contact-view > h4{
     width: 640px;
     color: #333e44;
@@ -924,4 +931,3 @@ a{
     background: var(--color-primary);
 }
 /*end-contact-view*/
->>>>>>> c0495f81e0e14b38a6d3930e204cbc9d3bdc473e

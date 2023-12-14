@@ -1,7 +1,7 @@
 
 const swiper = document.querySelector(".swiper-wrapper"),
     swiperImgs = swiper.querySelectorAll(".swiper-slide img"),
-    imgLeft = document.querySelector(".product-detail-left img"),
+    imgLeft = document.querySelector(".product-detail-left .img"),
     firstImg = swiper.querySelectorAll(".swiper-slide")[0],
     arrowIcons = document.querySelectorAll(".swiper-container .swiper-button")
 
@@ -12,7 +12,12 @@ let scrollWidth = swiper.scrollWidth - swiper.clientWidth
 // Handle click sub img
 swiperImgs.forEach((img, index) => {
     img.addEventListener("click", () => {
-        imgLeft.setAttribute("src", img.src)
+        console.log(img.src)
+        const html = `
+            <img src="${img.src}" alt="" class="img-main">
+        `;
+        console.log(html)
+        imgLeft.innerHTML = html
         handleImgActive(index)
     })
 })
