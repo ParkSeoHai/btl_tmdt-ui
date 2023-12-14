@@ -131,13 +131,13 @@ a{
   background: white;
 }
 .swiper-wrapper{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property:transform;
-  box-sizing: content-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property:transform;
+    box-sizing: content-box;
 }
 .swiper-slide{
   flex-shrink: 0;
@@ -779,11 +779,15 @@ a{
 
 
 /*store-system*/
+
+.info-store-list{
+    height: 500px;
+    overflow-y: auto;
+}
+
 .page-store .info-store{
-  margin-top: 15px;
+    border-bottom: 1px #ccc solid;
   max-height: 500px;
-  overflow: hidden;
-  overflow-y: auto;
 }
 .page-store .info-store .store-list{
   background: #fff;
@@ -792,9 +796,11 @@ a{
   border-bottom: dashed 1px #F2F2F2;
   cursor: pointer;
 }
-.page-store .info-store .store-list:hover{
-  background-color: #90d3fd;
+
+.page-store .info-store .store-list a:hover{
+    color: #22aaff;
 }
+
 .page-store .info-store .store-list .store-name{
   position: relative;
   display: inline-block;
