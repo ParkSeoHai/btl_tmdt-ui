@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <div id="top-header">
+            <div class="top-header-logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="top-header-center">
+                <div class="top-header-center-hotline">
+                    <i class="hotline-map bi bi-telephone-fill"></i>
+                    <span>HOTLINE:</span>
+                    <a href="">0379885603 | 0333301536</a>
+                </div>
+                <div class="top-header-center-liststore">
+                    <i class="hotline-map bi bi-map-fill"></i>
+                    <a href="../views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
+                </div>
+                <div class="top-header-center-searchmember">
+                    <input type="text" placeholder="Tìm sản phẩm...">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+            <div class="top-header-left">
+                <div class="top-header-left-btn search-btn">
+                    <div class="top-header-left-btn-icon">
+                        <i class="bi bi-binoculars-fill"></i>
+                    </div>
+                    <span>TRA CỨU</span>
+                    <div class="search-list arrow-menu">
+                        <ul>
+                            <li><a href="../views/search-orders.html">Kiểm tra đơn hàng</a></li>
+                            <li><a href="../views/search-warranty.html">Kiểm tra bảo hành</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-header-left-btn acc-btn">
+                    <div class="top-header-left-btn-icon">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <span>TÀI KHOẢN</span>
+                    <div class="acc-list arrow-menu">
+                        <ul>
+                            <li>
+                                <a href="../views/login-view.html">
+                                    <i class="bi bi-box-arrow-in-right icon"></i>
+                                    <span>Đăng nhập</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../views/register-view.html">
+                                    <i class="bi bi-person-add icon"></i>
+                                    <span>Đăng ký</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="../views/shopping-cart.html"><div class="basket top-header-left-btn basket-list">
+                    <div class="top-header-left-btn-icon">
+                        <i class="bi bi-cart-fill"></i>
+                        <p>0</p>
+                    </div>
+                    <span>GIỎ HÀNG</span>
+                    <div class="basket-member">
+                        <i class="bi bi-bag-plus"></i>
+                        <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <ul>
+            <li><a href="../index.html">TRANG CHỦ</a></li>
+            <li class="bottom-header-listmember">
+                <a href="" class="dropdown">SẢN PHẨM
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="list-menu">
+                    <div class="row">
+                        <div class="col list-menu-member">
+                            <div class="col-heading">
+                                <a class="col-header" href="">VỢT CẦU LÔNG</a>
+                            </div>
+                            <ul class="d-inline">
+                                <li><a href="">Vợt cầu lông Yonex</a></li>
+                                <li><a href="">Vợt cầu lông Victor</a></li>
+                                <li><a href="">Vợt cầu lông Lining</a></li>
+                                <li><a href="">Vợt Cầu Lông Mizuno</a></li>
+                                <li><a href="">Vợt Cầu Lông Apacs</a></li>
+                                <li><a href="">Vợt Cầu Lông VNB</a></li>
+                                <li><a href="">Vợt cầu lông Proace</a></li>
+                                <li><a href="">Vợt cầu lông Forza</a></li>
+                                <li><a href="">Vợt Cầu Lông FlyPower</a></li>
+                                <li><a href="">Vợt Cầu Lông Tenway</a></li>
+                            </ul>
+                            <a class="col-footer" href="">Xem thêm</a>
+                        </div>
+                        <div class="col list-menu-member">
+                            <div class="col-heading">
+                                <a class="col-header" href="">GIÀY CẦU LÔNG</a>
+                            </div>
+                            <ul class="d-inline">
+                                <li><a href="">Giày cầu lông Yonex</a></li>
+                                <li><a href="">Giày cầu lông Victor</a></li>
+                                <li><a href="">Giày cầu lông Lining</a></li>
+                                <li><a href="">Giày Cầu Lông Kawasaki</a></li>
+                                <li><a href="">Giày Cầu Lông Mizuno</a></li>
+                                <li><a href="">Giày Cầu Lông Kumpoo</a></li>
+                                <li><a href="">Giày cầu lông Promax</a></li>
+                                <li><a href="">Giày cầu lông Babolat</a></li>
+                                <li><a href="">Giày Cầu Lông Sunbatta</a></li>
+                                <li><a href="">Giày Cầu Lông Apacs</a></li>
+                            </ul>
+                            <a class="col-footer" href="">Xem thêm</a>
+                        </div>
+                        <div class="col list-menu-member">
+                            <div class="col-heading">
+                                <a class="col-header" href="">ÁO CẦU LÔNG</a>
+                            </div>
+                            <ul class="d-inline">
+                                <li><a href="">Áo cầu lông Yonex</a></li>
+                                <li><a href="">Áo cầu lông VNB</a></li>
+                                <li><a href="">Áo cầu lông Kamito</a></li>
+                                <li><a href="">Áo Cầu Lông Victo</a></li>
+                                <li><a href="">Áo Cầu Lông Lining</a></li>
+                                <li><a href="">Áo Cầu Lông DonexPro</a></li>
+                                <li><a href="">Áo cầu lông Alien Armour</a></li>
+                                <li><a href="">Áo cầu lông SFD</a></li>
+                                <li><a href="">Áo Cầu Lông Kawasaki</a></li>
+                                <li><a href="">Áo Cầu Lông Pebble Beach</a></li>
+                            </ul>
+                            <a class="col-footer" href="">Xem thêm</a>
+                        </div>
+                        <div class="col list-menu-member">
+                            <div class="col-heading">
+                                <a class="col-header" href="">VÁY CẦU LÔNG</a>
+                            </div>
+                            <ul class="d-inline">
+                                <li><a href="">Váy cầu lông Yonex</a></li>
+                                <li><a href="">Váy cầu lông Victec</a></li>
+                                <li><a href="">Váy cầu lông Lining</a></li>
+                                <li><a href="">Váy Cầu Lông DonexPro</a></li>
+                                <li><a href="">Váy Cầu Lông Victor</a></li>
+                            </ul>
+                        </div>
+                        <div class="col list-menu-member">
+                            <div class="col-heading">
+                                <a class="col-header" href="">QUẦN CẦU LÔNG</a>
+                            </div>
+                            <ul class="d-inline">
+                                <li><a href="">Quần cầu lông Yonex</a></li>
+                                <li><a href="">Quần cầu lông Victor</a></li>
+                                <li><a href="">Quần cầu lông Lining</a></li>
+                                <li><a href="">Quần Cầu Lông VNB</a></li>
+                                <li><a href="">Quần Cầu Lông SFD</a></li>
+                                <li><a href="">Quần Cầu Lông DonexPro</a></li>
+                                <li><a href="">Quần cầu lông Apacs</a></li>
+                                <li><a href="">Quần cầu lông Alien Amour</a></li>
+                                <li><a href="">Quần Cầu Lông Mizuno</a></li>
+                                <li><a href="">Quần Cầu Lông Kawasaki</a></li>
+                            </ul>
+                            <a class="col-footer" href="">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="">SALE OFF</a></li>
+            <li><a href="../views/tintuc-view.html">TIN TỨC</a></li>
+            <li><a href="">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
+            <li class="list-train">
+                <a href="" class="dropdown">HƯỚNG DẪN
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="list-train-member">
+                    <li><a href="../views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
+                    <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+                    <li><a href="">Công nghệ sản phẩm</a></li>
+                </ul>
+            </li>
+            <li><a href="">GIỚI THIỆU</a></li>
+            <li><a href="../views/contact-view.html">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="infomation-badminton container">
+        <div class="row">
+            <div class="infomation-badminton-list col-9">
+                <div class="infomation-badminton-search">
+                    <h1>TỔNG HỢP THÔNG TIN CẦU LÔNG</h1>
+                    <b>Từ khóa</b>
+                    <input type="text" placeholder="">
+                    <button>Tìm Kiếm:</button>
+                </div>
+                <div class="information-badminton-member">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-1.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng">
+                                            Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Túi cầu lông Yonex không chỉ là một vật dụng chứa đựng, mà còn là người bạn đồng hành đáng tin cậy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-2.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách">
+                                            Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Giày cầu lông là một phụ kiến cực kì quan trọng đối với những người chơi cầu lông. Việc chọn được mộ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-3.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách.">
+                                            Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Một số kinh nghiệm chọn giày cầu lông giúp bảo vệ đôi chân của người chơi, ngăn ngừa chấn thương cũng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-1.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng">
+                                            Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Túi cầu lông Yonex không chỉ là một vật dụng chứa đựng, mà còn là người bạn đồng hành đáng tin cậy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-2.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách">
+                                            Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Giày cầu lông là một phụ kiến cực kì quan trọng đối với những người chơi cầu lông. Việc chọn được mộ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-3.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách.">
+                                            Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Một số kinh nghiệm chọn giày cầu lông giúp bảo vệ đôi chân của người chơi, ngăn ngừa chấn thương cũng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-1.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng">
+                                            Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Túi cầu lông Yonex không chỉ là một vật dụng chứa đựng, mà còn là người bạn đồng hành đáng tin cậy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-2.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách">
+                                            Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Giày cầu lông là một phụ kiến cực kì quan trọng đối với những người chơi cầu lông. Việc chọn được mộ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-3.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách.">
+                                            Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Một số kinh nghiệm chọn giày cầu lông giúp bảo vệ đôi chân của người chơi, ngăn ngừa chấn thương cũng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-1.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng">
+                                            Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Túi cầu lông Yonex không chỉ là một vật dụng chứa đựng, mà còn là người bạn đồng hành đáng tin cậy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-2.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách">
+                                            Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Giày cầu lông là một phụ kiến cực kì quan trọng đối với những người chơi cầu lông. Việc chọn được mộ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-4">
+                            <div class="block-blog">
+                                <div class="img">
+                                    <img src="../assets/img/section_blog-3.webp" alt="">
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="text-center">
+                                        <a href="#" title="Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách.">
+                                            Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách
+                                        </a>
+                                    </h3>
+                                    <p class="time-post text-center">
+                                        <span>30-11-2023 13:46</span>
+                                    </p>
+                                    <p class="desc">
+                                        Một số kinh nghiệm chọn giày cầu lông giúp bảo vệ đôi chân của người chơi, ngăn ngừa chấn thương cũng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number float-end">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item page-member"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item page-member"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item page-member">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="infomation-menu">
+                    <span class="title-head">
+                        Danh mục tin tức
+                    </span>
+                    <nav class="nav-category">
+                        <ul class="nav-list">
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Thông Tin Tổng Hợp Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon icon-animation"></i>
+                                </div>
+                                <ul class="menu_down nav-lv2">
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Kiến Thức Cầu Lông</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Sân Cầu Lông</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Thầy Dạy Cầu Lông</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Các Trường Thể Thao Đạt Chuẩn</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Câu Lạc Bộ - Nhóm Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon"></i>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Thầy Dạy Đánh Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon"></i>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Chính Sách</a>
+                                    <i class="bi bi-plus-lg icon"></i>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Hướng Dẫn</a>
+                                    <i class="bi bi-plus-lg icon icon-animation"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="infomation-menu">
+                    <span class="title-head">
+                        Danh mục sản phẩm
+                    </span>
+                    <nav class="nav-category">
+                        <ul class="nav-list">
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Vợt Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon icon-animation"></i>
+                                </div>
+                                <ul class="menu_down nav-lv2">
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Vợt cầu lông Yonex</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Vợt cầu lông Lining</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Vợt cầu lông Victo</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Vợt cầu lông VNB</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Quần Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon"></i>
+                                </div>
+                                <ul class="menu_down nav-lv2">
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Quần Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Quần Cầu Lông Lining</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Quần Cầu Lông VNB</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Quần Cầu Lông Victo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Áo Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon"></i>
+                                </div>
+                                <ul class="menu_down nav-lv2">
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Áo Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Áo Cầu Lông Lining</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Áo Cầu Lông VNB</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Áo Cầu Lông Victo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Giày Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon"></i>
+                                </div>
+                                <ul class="menu_down nav-lv2">
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Giày Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Giày Cầu Lông Lining</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Giày Cầu Lông VNB</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Giày Cầu Lông Victo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-lv1">
+                                <div class="nav-lv1">
+                                    <a href="#">Váy Cầu Lông</a>
+                                    <i class="bi bi-plus-lg icon icon-animation"></i>
+                                </div>
+                                <ul class="menu_down nav-lv2">
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Váy Cầu Lông Yonex</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Váy Cầu Lông Lining</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Váy Cầu Lông VNB</a>
+                                    </li>
+                                    <li class="dropdown-submenu nav-item">
+                                        <a href="#">Váy Cầu Lông Victo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <h4 class="title-menu">Thông tin chung</h4>
+                <div class="des_foo">
+                    <p>
+                        <b>VNB Sports</b>
+                        là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp
+                        sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp
+                    </p>
+                    <p>
+                        <b>Với sứ mệnh:</b>
+                        <em>
+                            "VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho
+                            người chơi thể thao để nâng cao sức khỏe của chính mình."
+                        </em>
+                    </p>
+                    <p>
+                        <b>Tầm nhìn:</b>
+                        <em>
+                            "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"
+                        </em>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 ps-4">
+                <h4 class="title-menu">Thông tin liên hệ</h4>
+                <div class="des_foo">
+                    <p>
+                        <b>Nguyễn Văn Hải</b>
+                    </p>
+                    <p>
+                        <b>Đỗ Minh Hiếu</b>
+                    </p>
+                    <p>
+                        <b>Phan Đức Huy</b>
+                    </p>
+                    <p>
+                        <b>Hotline:</b>
+                        0355063692 | 0785277320
+                    </p>
+                    <p>
+                        <b>Email:</b>
+                        info@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <h4 class="title-menu">Chính sách</h4>
+                <ul class="list">
+                    <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+                    <li class="item"><a href="#">Chính sách bảo hành</a></li>
+                    <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+                    <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+                    <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+                    <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <h4 class="title-menu">Hướng dẫn</h4>
+                <ul class="list">
+                    <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+                    <li class="item"><a href="#">Chính sách bảo hành</a></li>
+                    <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+                    <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+                    <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+                    <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/nav_category.js"></script>
+</body>
+</html>
