@@ -697,8 +697,13 @@ a{
 }
 
 .page-store .info-store{
+<<<<<<< HEAD
+  overflow: hidden;
+  overflow-y: auto;
+=======
     border-bottom: 1px #ccc solid;
   max-height: 500px;
+>>>>>>> 01d91b713f8126bf8810d25504e21e34b6fdc5a6
 }
 .page-store .info-store .store-list{
   background: #fff;
@@ -707,9 +712,14 @@ a{
   border-bottom: dashed 1px #F2F2F2;
   cursor: pointer;
 }
+.page-store .info-store .store-list:hover {
+  background-color: #90d3fd;
+  color: white;
+}
 
 .page-store .info-store .store-list a:hover{
     color: #22aaff;
+>>>>>>> 01d91b713f8126bf8810d25504e21e34b6fdc5a6
 }
 
 .page-store .info-store .store-list .store-name{
@@ -848,6 +858,7 @@ a{
     background: var(--color-primary);
 }
 /*end-contact-view*/
+
 /*start-information-badminton*/
 .infomation-badminton{
 
@@ -933,3 +944,6 @@ a{
     padding: 15px 0 0 15px;
 }
 /*end-infomation-badminton*/
+
+
+/*Saleoff*/
