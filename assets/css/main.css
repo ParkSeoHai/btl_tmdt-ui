@@ -942,7 +942,6 @@ a{
     text-transform: uppercase;
     padding: 15px 0 0 15px;
 }
-
 .infomation-system>h1{
     color: #333333;
     font-size: 2.6rem;
@@ -1095,3 +1094,13 @@ a{
 }
 /*end-trade-info*/
 
+/*fix-infor-account-view*/
+.page_customer_account{
+  margin-bottom: 30px;
+}
+.page-login .form-signup{
+  margin-top: 10px;
+}
+h1, .title-head{
+  font-size: 3rem;
+}
