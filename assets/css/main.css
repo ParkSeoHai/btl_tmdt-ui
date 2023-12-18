@@ -952,8 +952,21 @@ a{
 .page-login .form-signup{
   margin-top: 10px;
 }
-h1 .title-head{
-  font-size: 3rem;
+h1.title-head{
+  font-size: 2rem;
   line-height: 3rem;
+  font-weight: 400;
+  color: #212B25;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.btn-blue{
+  background: var(--color-primary);
+  color: #f7f8f9;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  border: 1px solid var(--color-primary);
 }
 
