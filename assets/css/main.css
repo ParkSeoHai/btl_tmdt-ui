@@ -1101,6 +1101,8 @@ a{
 .page-login .form-signup{
   margin-top: 10px;
 }
-h1, .title-head{
+h1 .title-head{
   font-size: 3rem;
+  line-height: 3rem;
 }
+
