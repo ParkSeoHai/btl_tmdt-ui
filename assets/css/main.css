@@ -945,5 +945,13 @@ a{
 }
 /*end-infomation-badminton*/
 
-
-/*Saleoff*/
+/*fix-infor-account-view*/
+.page_customer_account{
+  margin-bottom: 30px;
+}
+.page-login .form-signup{
+  margin-top: 10px;
+}
+h1, .title-head{
+  font-size: 3rem;
+}
