@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thông tin tài khoản</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" as="style" href="bootstrap/scss/forms/ajaxcart.scss" type="text/css">
+
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+  <div class="container">
+    <div id="top-header">
+      <div class="top-header-logo">
+        <a href="./index.html">
+          <img src="./assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+        </a>
+      </div>
+      <div class="top-header-center">
+        <div class="top-header-center-hotline">
+          <i class="hotline-map bi bi-telephone-fill"></i>
+          <span>HOTLINE:</span>
+          <a href="">0379885603 | 0333301536</a>
+        </div>
+        <div class="top-header-center-liststore">
+          <i class="hotline-map bi bi-map-fill"></i>
+          <a href="./views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
+        </div>
+        <div class="top-header-center-searchmember">
+          <input type="text" placeholder="Tìm sản phẩm...">
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
+      <div class="top-header-left">
+        <div class="top-header-left-btn search-btn">
+          <div class="top-header-left-btn-icon">
+            <i class="bi bi-binoculars-fill"></i>
+          </div>
+          <span>TRA CỨU</span>
+          <div class="search-list arrow-menu">
+            <ul>
+              <li><a href="./views/search-orders.html">Kiểm tra đơn hàng</a></li>
+              <li><a href="./views/search-warranty.html">Kiểm tra bảo hành</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-header-left-btn acc-btn">
+          <div class="top-header-left-btn-icon">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <span>TÀI KHOẢN</span>
+          <div class="acc-list arrow-menu">
+            <ul>
+              <li>
+                <a href="./views/login-view.html">
+                  <i class="bi bi-box-arrow-in-right icon"></i>
+                  <span>Đăng nhập</span>
+                </a>
+              </li>
+              <li>
+                <a href="./views/register-view.html">
+                  <i class="bi bi-person-add icon"></i>
+                  <span>Đăng ký</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./views/shopping-cart.html"><div class="basket top-header-left-btn basket-list">
+          <div class="top-header-left-btn-icon">
+            <i class="bi bi-cart-fill"></i>
+            <p>0</p>
+          </div>
+          <span>GIỎ HÀNG</span>
+          <div class="basket-member">
+            <i class="bi bi-bag-plus"></i>
+            <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+          </div>
+        </div></a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-header">
+    <ul>
+      <li><a href="">TRANG CHỦ</a></li>
+      <li class="bottom-header-listmember">
+        <a href="" class="dropdown">SẢN PHẨM
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <div class="list-menu">
+          <div class="row">
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">VỢT CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Vợt cầu lông Yonex</a></li>
+                <li><a href="">Vợt cầu lông Victor</a></li>
+                <li><a href="">Vợt cầu lông Lining</a></li>
+                <li><a href="">Vợt Cầu Lông Mizuno</a></li>
+                <li><a href="">Vợt Cầu Lông Apacs</a></li>
+                <li><a href="">Vợt Cầu Lông VNB</a></li>
+                <li><a href="">Vợt cầu lông Proace</a></li>
+                <li><a href="">Vợt cầu lông Forza</a></li>
+                <li><a href="">Vợt Cầu Lông FlyPower</a></li>
+                <li><a href="">Vợt Cầu Lông Tenway</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">GIÀY CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Giày cầu lông Yonex</a></li>
+                <li><a href="">Giày cầu lông Victor</a></li>
+                <li><a href="">Giày cầu lông Lining</a></li>
+                <li><a href="">Giày Cầu Lông Kawasaki</a></li>
+                <li><a href="">Giày Cầu Lông Mizuno</a></li>
+                <li><a href="">Giày Cầu Lông Kumpoo</a></li>
+                <li><a href="">Giày cầu lông Promax</a></li>
+                <li><a href="">Giày cầu lông Babolat</a></li>
+                <li><a href="">Giày Cầu Lông Sunbatta</a></li>
+                <li><a href="">Giày Cầu Lông Apacs</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">ÁO CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Áo cầu lông Yonex</a></li>
+                <li><a href="">Áo cầu lông VNB</a></li>
+                <li><a href="">Áo cầu lông Kamito</a></li>
+                <li><a href="">Áo Cầu Lông Victo</a></li>
+                <li><a href="">Áo Cầu Lông Lining</a></li>
+                <li><a href="">Áo Cầu Lông DonexPro</a></li>
+                <li><a href="">Áo cầu lông Alien Armour</a></li>
+                <li><a href="">Áo cầu lông SFD</a></li>
+                <li><a href="">Áo Cầu Lông Kawasaki</a></li>
+                <li><a href="">Áo Cầu Lông Pebble Beach</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">VÁY CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Váy cầu lông Yonex</a></li>
+                <li><a href="">Váy cầu lông Victec</a></li>
+                <li><a href="">Váy cầu lông Lining</a></li>
+                <li><a href="">Váy Cầu Lông DonexPro</a></li>
+                <li><a href="">Váy Cầu Lông Victor</a></li>
+              </ul>
+            </div>
+            <div class="col list-menu-member">
+              <div class="col-heading">
+                <a class="col-header" href="">QUẦN CẦU LÔNG</a>
+              </div>
+              <ul class="d-inline">
+                <li><a href="">Quần cầu lông Yonex</a></li>
+                <li><a href="">Quần cầu lông Victor</a></li>
+                <li><a href="">Quần cầu lông Lining</a></li>
+                <li><a href="">Quần Cầu Lông VNB</a></li>
+                <li><a href="">Quần Cầu Lông SFD</a></li>
+                <li><a href="">Quần Cầu Lông DonexPro</a></li>
+                <li><a href="">Quần cầu lông Apacs</a></li>
+                <li><a href="">Quần cầu lông Alien Amour</a></li>
+                <li><a href="">Quần Cầu Lông Mizuno</a></li>
+                <li><a href="">Quần Cầu Lông Kawasaki</a></li>
+              </ul>
+              <a class="col-footer" href="">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="./views/sale-off-view.html">SALE OFF</a></li>
+      <li><a href="./views/tintuc-view.html">TIN TỨC</a></li>
+      <li><a href="">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
+      <li class="list-train">
+        <a href="" class="dropdown">HƯỚNG DẪN
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <ul class="list-train-member">
+          <li><a href="./views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
+          <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+          <li><a href="">Công nghệ sản phẩm</a></li>
+        </ul>
+      </li>
+      <li><a href="">GIỚI THIỆU</a></li>
+      <li><a href="./views/contact-view.html">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+</header>
+<!--body-->
+<div class="bodywrap">
+  <div class="container page_customer_account">
+    <section class="page-login mr-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+
+          </div>
+          <div class="col-lg-8 form-signup">
+            <div class="text-centers" style="margin-bottom:10px;">
+              <h1 class="title-head margin-top-0">
+                Trang thông tin tài khoản
+              </h1>
+              <a href="#" class="btn btn-blue">
+                <i class="fa fa-reply">
+                  Quay lại
+                </i>
+              </a>
+            </div>
+            <form  method="post" action="#" class="form form--general">
+              <input type="hidden" name="act" value="update_thong_tin">
+              <div class="panel panel-primary" id="update_thong_tin">
+                <h4>Thông tin tài khoản</h4>
+                <div class="panel-body">
+                  <div class="form-group form-group-lg box_text">
+                    <div class="form-group">
+                      <label>Email
+                      <span class="error">*</span></label>
+                      <input type="email" class="form-control form-control-lg" value=" " disabled="disabled">
+                    </div>
+                  </div>
+                  <div class="form-group form-group-lg box_text">
+                    <div class="form-group">
+                      <label>Họ tên
+                      <span class="error">*</span></label>
+                      <input type="text" class="form-control" name="ten" id="ten" value="" placeholder="Nhập tên của bạn (*)" required>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-lg box_text">
+                    <div class="form-group">
+                      <label>Số điện thoại
+                        <span class="error">*</span></label>
+                      <input type="tel" class="form-control" name="so_dt" id="so_dt" value="" placeholder="Nhập số điện thoại của bạn (*)" required="te
+">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="control-label col-lg-3 col-md-4 col-sm-6">
+                      <strong>Giới tính:</strong>
+                    </label>
+                    <div class="col-lg-9 col-md-8 col-sm-6">
+                      <select class="form-control" name="gioi_tinh">
+                        <option value>Chọn giới tính</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="control-label col-lg-3 col-md-4 col-sm-6">
+                      <strong>Ngày sinh:</strong>
+                    </label>
+                    <div class="col-lg-9 col-md-8 col-sm-6">
+                      <div class="ele_birthday" id="ele_ngay_sinh" >
+                        <fieldset class="birthdayPicker">
+                          <select class="birthMonth" name="ele_ngay_sinh_birth[month]">
+                            <option value="0">Chọn tháng</option>
+                            <option value="1">Tháng 1</option>
+                            <option value="2">Tháng 2</option>
+                            <option value="3">Tháng 3</option>
+                            <option value="4">Tháng 4</option>
+                            <option value="5">Tháng 5</option>
+                            <option value="6">Tháng 6</option>
+                            <option value="7">Tháng 7</option>
+                            <option value="8">Tháng 8</option>
+                            <option value="9">Tháng 9</option>
+                            <option value="10">Tháng 10</option>
+                            <option value="11">Tháng 11</option>
+                            <option value="12">Tháng 12</option>
+                          </select>
+                          <select class="birthDate " name="ele_ngay_sinh_birth[day]">
+                            <option value="0">Chọn ngày</option>
+                            <option value="1">01</option>
+                            <option value="2">028</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select>
+                          <select class="birthYear " name="ele_ngay_sinh_birth[year]">
+                            <option value="0">Chọn năm</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                          </select>
+                          <input class="birthDay" name="ele_ngay_sinh_birthDay" type="hidden" value="">
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <div class="form-group-lg">
+                    <div class="wrap-submit">
+                      <input type="submit" value="Cập nhật" class="btn btn-style btn_50">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <form  method="post" action="#" class="form form--general">
+              <input name="act" value="update_mat_khau" type="hidden">
+              <div class="panel panel-primary" id="update_mat_khau">
+                <h4>Đổi mật khẩu</h4>
+                <div class="panel-body">
+                  <div class="form-group form-group-lg box_text row">
+                    <label class="control-label col-lg-3 col-md-4 col-sm-6">
+                      <strong>Mật khẩu hiện tại:</strong>
+                    </label>
+                    <div class="col-lg-9 col-md-8 col-sm-6">
+                      <div class="form-group">
+                        <div class="form-group-addon">
+                          <i class="fa fa-lock">
+
+                          </i>
+                        </div>
+                        <input type="password" name="mat_khau" class="form-control" value required placeholder="Mật khẩu hiện tại (*)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-lg box_text row">
+                    <label class="control-label col-lg-3 col-md-4 col-sm-6">
+                      <strong>Mật khẩu mới:</strong>
+                    </label>
+                    <div class="col-lg-9 col-md-8 col-sm-6">
+                      <div class="form-group">
+                        <div class="form-group-addon">
+                          <i class="fa fa-lock">
+
+                          </i>
+                        </div>
+                        <input type="password" class="form-control" value name="pass" placeholder="Mật khẩu mới (*)" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-lg box_text row">
+                    <label class="control-label col-lg-3 col-md-4 col-sm-6">
+                      <strong>Nhập lại mật khẩu mới:</strong>
+                    </label>
+                    <div class="col-lg-9 col-md-8 col-sm-6">
+                      <div class="form-group">
+                        <div class="form-group-addon">
+                          <i class="fa fa-lock">
+
+                          </i>
+                        </div>
+                        <input type="password" class="form-control" value name="re_pass" placeholder="Nhập lại mật khẩu mới (*)" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <div class="form-group-lg">
+                    <div class="wrap-submit">
+                      <input class="btn btn-style btn_50" type="submit" value="Đổi mật khẩu">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-2"></div>
+          <div style="clear:both"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h4 class="title-menu">Thông tin chung</h4>
+        <div class="des_foo">
+          <p>
+            <b>VNB Sports</b>
+            là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp
+            sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp
+          </p>
+          <p>
+            <b>Với sứ mệnh:</b>
+            <em>
+              "VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho
+              người chơi thể thao để nâng cao sức khỏe của chính mình."
+            </em>
+          </p>
+          <p>
+            <b>Tầm nhìn:</b>
+            <em>
+              "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"
+            </em>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 ps-4">
+        <h4 class="title-menu">Thông tin liên hệ</h4>
+        <div class="des_foo">
+          <p>
+            <b>Nguyễn Văn Hải</b>
+          </p>
+          <p>
+            <b>Đỗ Minh Hiếu</b>
+          </p>
+          <p>
+            <b>Phan Đức Huy</b>
+          </p>
+          <p>
+            <b>Hotline:</b>
+            0355063692 | 0785277320
+          </p>
+          <p>
+            <b>Email:</b>
+            info@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h4 class="title-menu">Chính sách</h4>
+        <ul class="list">
+          <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+          <li class="item"><a href="#">Chính sách bảo hành</a></li>
+          <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+          <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+          <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+          <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h4 class="title-menu">Hướng dẫn</h4>
+        <ul class="list">
+          <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+          <li class="item"><a href="#">Chính sách bảo hành</a></li>
+          <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+          <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+          <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+          <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>
