@@ -81,27 +81,6 @@ a{
   background-color: var(--color-primary);
   margin-top: 5px;
 }
-#new-product h2 span{
-  color: var(--color-primary);
-}
-#new-product h2 a{
-  text-decoration: none;
-}
-#new-product h2{
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 500;
-  letter-spacing: 0;
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  font-size: 2rem;
-  padding-bottom: 20px;
-}
-.title-new-product{
-  margin-bottom: 35px;
-  position: relative;
-  text-align: center;
-}
 #new-product .slider-new-product{
   border-radius: 8px;
   border: 1px solid #e6e6e6;
@@ -138,7 +117,33 @@ a{
     display: flex;
     transition-property:transform;
     box-sizing: content-box;
+    overflow-x: scroll;
 }
+#new-product .product-new {
+  min-height: 350px;
+}
+
+/* width */
+.swiper-wrapper-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+/* Track */
+.swiper-wrapper-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.swiper-wrapper-scroll::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.swiper-wrapper-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .swiper-slide{
   flex-shrink: 0;
   height: 100%;
@@ -146,6 +151,10 @@ a{
   position: relative;
   transition-property:transform;
 }
+#new-product .slider-new-product .tabs-time .tab-link {
+  color: #555;
+}
+
 #new-product .new-product-tab .tabs-title .tab-link:last-child{
   margin-right: 0;
 }
@@ -159,6 +168,7 @@ a{
   font-weight: 600;
   margin-top: 10px;
 }
+
 #new-product .new-product-tab .tabs-time .tab-link .title-tab{
   margin: 0;
   padding: 0;
@@ -180,6 +190,7 @@ a{
   max-width: unset;
   min-height: unset;
   transition: color 0.3s ease 0s;
+  cursor: pointer;
 }
 /* Section 3 banner */
 .section_3_banner {
@@ -419,9 +430,10 @@ a{
   color: #e8002d;
   line-height: 23px;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   min-height: 25px;
+  margin-top: 5px;
 }
 .item_product_main .product-info .price-box .price{
   padding-right: 5px;
@@ -537,15 +549,16 @@ a{
 /*end-seach-warranty*/
 /*start-login-view*/
 .login-view{
-    width: 400px;
-    margin-bottom: 300px;
+  position: relative;
+  width: 400px;
+  margin-bottom: 50px;
 }
 
 .login-view > span{
-    color: var(--color-primary);
-    font-weight: 500 ;
-    font-size: 2.6rem;
-    margin: 15px 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 2rem;
 }
 
 
@@ -636,8 +649,9 @@ a{
 
 /*start-register-view*/
 .register-view{
+    position: relative;
     width: 400px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
 }
 
 .register-view > span{

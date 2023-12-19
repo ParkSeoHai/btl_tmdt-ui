@@ -177,12 +177,34 @@
     right: 0;
     top: 44px;
     width: 100%;
-    display: none;
+    height: 80vh;
     justify-content: space-around;
-    padding: 10px;
+    padding: 10px 16px;
+    overflow-y: scroll;
     max-height: 390px;
     background: white;
     z-index: 2;
+    display: none;
+}
+
+/* width */
+.list-menu::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.list-menu::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+.list-menu::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+.list-menu::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 .row{
@@ -225,33 +247,46 @@
     border-bottom: 1px solid #ccc;
 }
 
-.col-heading{
-    padding-bottom: 5px;
+.col-heading {
+    /* padding-bottom: 5px; */
+    margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
 }
 
-.col-header{
+.col-header {
+    padding-bottom: 5px;
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    width: 220px;
 }
 
 .col-footer{
     color: var(--color-primary);
     text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.list-menu-member {
+    padding-bottom: 10px;
 }
 
 .list-menu-member ul > li > a{
     color: #333E44;
     padding: 0;
-    margin-bottom: 5px;
     font-weight: unset;
-    height: 19px;
+    padding: 6px 0;
+}
+
+.list-menu-member ul > li > a:hover {
+    color: var(--color-primary);
 }
 
 .bottom-header li:hover>.list-menu{
-    display: flex;
+    display: block;
 }
 
 .search-btn{
