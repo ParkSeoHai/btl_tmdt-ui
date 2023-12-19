@@ -221,7 +221,7 @@
     position: absolute;
     z-index: 2;
     background: #fff;
-    top: 45px;
+    top: 42px;
     box-shadow: 0 2px 6px 0 var(--color-primary);
 }
 

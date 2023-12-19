@@ -12,213 +12,161 @@
     <link rel="stylesheet" href="../assets/css/productDetailMain.css">
 </head>
 <body>
-<!-- Header -->
-<header id="header">
-    <div class="container">
-        <div id="top-header">
-            <div class="top-header-logo">
-                <a href="../index.html">
-                    <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
-                </a>
-            </div>
-            <div class="top-header-center">
-                <div class="top-header-center-hotline">
-                    <i class="hotline-map bi bi-telephone-fill"></i>
-                    <span>HOTLINE:</span>
-                    <a href="">0379885603 | 0333301536</a>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div id="top-header">
+                <div class="top-header-logo">
+                    <a href="/">
+                      <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+                    </a>
                 </div>
-                <div class="top-header-center-liststore">
-                    <i class="hotline-map bi bi-map-fill"></i>
-                    <a href="../views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
-                </div>
-                <div class="top-header-center-searchmember">
-                    <input type="text" placeholder="Tìm sản phẩm...">
-                    <i class="bi bi-search"></i>
-                </div>
-            </div>
-            <div class="top-header-left">
-                <div class="top-header-left-btn search-btn">
-                    <div class="top-header-left-btn-icon">
-                        <i class="bi bi-binoculars-fill"></i>
+                <div class="top-header-center">
+                    <div class="top-header-center-hotline">
+                        <i class="hotline-map bi bi-telephone-fill"></i>
+                        <span>HOTLINE:</span>
+                        <a href="tel:+84379885603">
+                          0379885603 | 0333301536
+                        </a>
                     </div>
-                    <span>TRA CỨU</span>
-                    <div class="search-list arrow-menu">
-                        <ul>
-                            <li><a href="../views/search-orders.html">Kiểm tra đơn hàng</a></li>
-                            <li><a href="../views/search-warranty.html">Kiểm tra bảo hành</a></li>
-                        </ul>
+                    <div class="top-header-center-liststore">
+                        <i class="hotline-map bi bi-map-fill"></i>
+                        <a href="../views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
+                    </div>
+                    <div class="top-header-center-searchmember">
+                        <input type="text" placeholder="Tìm sản phẩm...">
+                        <i class="bi bi-search"></i>
                     </div>
                 </div>
-                <div class="top-header-left-btn acc-btn">
+                <div class="top-header-left">
+                  <div class="top-header-left-btn search-btn">
+                      <div class="top-header-left-btn-icon">
+                          <i class="bi bi-binoculars-fill"></i>
+                      </div>
+                      <span>TRA CỨU</span>
+                      <div class="search-list arrow-menu">
+                          <ul>
+                              <li><a href="../views/search-orders.html">Kiểm tra đơn hàng</a></li>
+                              <li><a href="../views/search-warranty.html">Kiểm tra bảo hành</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="top-header-left-btn acc-btn">
                     <div class="top-header-left-btn-icon">
                         <i class="bi bi-person-circle"></i>
                     </div>
                     <span>TÀI KHOẢN</span>
                     <div class="acc-list arrow-menu">
-                        <ul>
-                            <li>
-                                <a href="../views/login-view.html">
-                                    <i class="bi bi-box-arrow-in-right icon"></i>
-                                    <span>Đăng nhập</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../views/register-view.html">
-                                    <i class="bi bi-person-add icon"></i>
-                                    <span>Đăng ký</span>
-                                </a>
-                            </li>
-                        </ul>
+                      <ul>
+                          <li>
+                              <a href="../views/login-view.html">
+                                  <i class="bi bi-box-arrow-in-right icon"></i>
+                                  <span>Đăng nhập</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="../views/register-view.html">
+                                  <i class="bi bi-person-add icon"></i>
+                                  <span>Đăng ký</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <!-- Menu user login -->
+                      <!-- <ul>
+                        <li>
+                            <a href="#">
+                                <span>Trang cá nhân</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dang-xuat">
+                                <span>Đăng xuất</span>
+                            </a>
+                        </li>
+                      </ul> -->
                     </div>
+                  </div>
+                  <a href="../views/shopping-cart.html">
+                    <div class="basket top-header-left-btn basket-list">
+                        <div class="top-header-left-btn-icon">
+                            <i class="bi bi-cart-fill"></i>
+                            <p>0</p>
+                        </div>
+                        <span>GIỎ HÀNG</span>
+                        <div class="basket-member">
+                            <i class="bi bi-bag-plus"></i>
+                            <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                        </div>
+                    </div>
+                  </a>
                 </div>
-                <a href="../views/shopping-cart.html"><div class="basket top-header-left-btn basket-list">
-                    <div class="top-header-left-btn-icon">
-                        <i class="bi bi-cart-fill"></i>
-                        <p>0</p>
-                    </div>
-                    <span>GIỎ HÀNG</span>
-                    <div class="basket-member">
-                        <i class="bi bi-bag-plus"></i>
-                        <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
-                    </div>
-                </div></a>
             </div>
         </div>
-    </div>
-    <div class="bottom-header">
-        <ul>
-            <li><a href="../index.html">TRANG CHỦ</a></li>
-            <li class="bottom-header-listmember">
-                <a href="" class="dropdown">SẢN PHẨM
-                    <i class="bi bi-chevron-down"></i>
-                </a>
-                <div class="list-menu">
-                    <div class="row">
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">VỢT CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Vợt cầu lông Yonex</a></li>
-                                <li><a href="">Vợt cầu lông Victor</a></li>
-                                <li><a href="">Vợt cầu lông Lining</a></li>
-                                <li><a href="">Vợt Cầu Lông Mizuno</a></li>
-                                <li><a href="">Vợt Cầu Lông Apacs</a></li>
-                                <li><a href="">Vợt Cầu Lông VNB</a></li>
-                                <li><a href="">Vợt cầu lông Proace</a></li>
-                                <li><a href="">Vợt cầu lông Forza</a></li>
-                                <li><a href="">Vợt Cầu Lông FlyPower</a></li>
-                                <li><a href="">Vợt Cầu Lông Tenway</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
+        <div class="bottom-header">
+            <ul>
+                <li><a href="../index.html">TRANG CHỦ</a></li>
+                <li class="bottom-header-listmember">
+                  <a href="#" class="dropdown">SẢN PHẨM
+                      <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <div class="list-menu">
+                    <div class="row list-menu-row">
+                      <!-- <div class="col list-menu-member">
+                        <div class="col-heading">
+                            <a class="col-header" href="">VỢT CẦU LÔNG</a>
                         </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">GIÀY CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Giày cầu lông Yonex</a></li>
-                                <li><a href="">Giày cầu lông Victor</a></li>
-                                <li><a href="">Giày cầu lông Lining</a></li>
-                                <li><a href="">Giày Cầu Lông Kawasaki</a></li>
-                                <li><a href="">Giày Cầu Lông Mizuno</a></li>
-                                <li><a href="">Giày Cầu Lông Kumpoo</a></li>
-                                <li><a href="">Giày cầu lông Promax</a></li>
-                                <li><a href="">Giày cầu lông Babolat</a></li>
-                                <li><a href="">Giày Cầu Lông Sunbatta</a></li>
-                                <li><a href="">Giày Cầu Lông Apacs</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">ÁO CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Áo cầu lông Yonex</a></li>
-                                <li><a href="">Áo cầu lông VNB</a></li>
-                                <li><a href="">Áo cầu lông Kamito</a></li>
-                                <li><a href="">Áo Cầu Lông Victo</a></li>
-                                <li><a href="">Áo Cầu Lông Lining</a></li>
-                                <li><a href="">Áo Cầu Lông DonexPro</a></li>
-                                <li><a href="">Áo cầu lông Alien Armour</a></li>
-                                <li><a href="">Áo cầu lông SFD</a></li>
-                                <li><a href="">Áo Cầu Lông Kawasaki</a></li>
-                                <li><a href="">Áo Cầu Lông Pebble Beach</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">VÁY CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Váy cầu lông Yonex</a></li>
-                                <li><a href="">Váy cầu lông Victec</a></li>
-                                <li><a href="">Váy cầu lông Lining</a></li>
-                                <li><a href="">Váy Cầu Lông DonexPro</a></li>
-                                <li><a href="">Váy Cầu Lông Victor</a></li>
-                            </ul>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">QUẦN CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Quần cầu lông Yonex</a></li>
-                                <li><a href="">Quần cầu lông Victor</a></li>
-                                <li><a href="">Quần cầu lông Lining</a></li>
-                                <li><a href="">Quần Cầu Lông VNB</a></li>
-                                <li><a href="">Quần Cầu Lông SFD</a></li>
-                                <li><a href="">Quần Cầu Lông DonexPro</a></li>
-                                <li><a href="">Quần cầu lông Apacs</a></li>
-                                <li><a href="">Quần cầu lông Alien Amour</a></li>
-                                <li><a href="">Quần Cầu Lông Mizuno</a></li>
-                                <li><a href="">Quần Cầu Lông Kawasaki</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
+                        <ul class="d-inline">
+                            <li><a href="">Vợt cầu lông Yonex</a></li>
+                            <li><a href="">Vợt cầu lông Victor</a></li>
+                            <li><a href="">Vợt cầu lông Lining</a></li>
+                            <li><a href="">Vợt Cầu Lông Mizuno</a></li>
+                            <li><a href="">Vợt Cầu Lông Apacs</a></li>
+                        </ul>
+                        <a class="col-footer" href="">Xem thêm</a>
+                      </div> -->
                     </div>
-                </div>
-            </li>
-            <li><a href="">SALE OFF</a></li>
-            <li><a href="../views/tintuc-view.html">TIN TỨC</a></li>
-            <li><a href="">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
-            <li class="list-train">
-                <a href="" class="dropdown">HƯỚNG DẪN
-                    <i class="bi bi-chevron-down"></i>
-                </a>
-                <ul class="list-train-member">
-                    <li><a href="../views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
-                    <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
-                    <li><a href="">Công nghệ sản phẩm</a></li>
-                </ul>
-            </li>
-            <li><a href="">GIỚI THIỆU</a></li>
-            <li><a href="../views/contact-view.html">LIÊN HỆ</a></li>
-        </ul>
-    </div>
-</header>
+                  </div>
+                </li>
+                <li><a href="../views/sale-off-view.html">SALE OFF</a></li>
+                <li><a href="../views/tintuc-view.html">TIN TỨC</a></li>
+                <li><a href="#">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
+                <li class="list-train">
+                    <a href="#" class="dropdown">HƯỚNG DẪN
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="list-train-member">
+                        <li><a href="../views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
+                        <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+                        <li><a href="">Công nghệ sản phẩm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="../views/contact-view.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </header>
     <!-- Main -->
     <main>
+        <!-- Breadcrumb -->
         <section class="section-breadcrumb">
             <div class="container">
                 <!-- Breadcrumb -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb breadcrumb-main mb-0">
-                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <!-- <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li class="breadcrumb-item"><a href="#">Giày Cầu Lông</a></li>
                         <li class="breadcrumb-item"><a href="#">Giày Cầu Lông Mizuno</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Giày Cầu Lông Mizuno Thunder Blade Z - Trắng Đỏ Vàng Chính Hãng (V1GA237045)</li>
+                        <li class="breadcrumb-item active" aria-current="page">Giày Cầu Lông Mizuno Thunder Blade Z - Trắng Đỏ Vàng Chính Hãng (V1GA237045)</li> -->
                     </ol>
                 </nav>
             </div>
         </section>
-
+        <!-- Product info -->
         <section class="layout-product">
             <div class="container">
                 <div class="details-product">
                     <div class="row">
+                        <!-- Left -->
                         <div class="col-lg-9 col-md-9 col-sm-12">
                             <div class="row align-items-center product-detail-container mb-4">
                                 <!-- <div class="product-detail-left col-5">
@@ -369,7 +317,7 @@
                                         <li class="tab-link active"><span>Mô tả sản phẩm</span></li>
                                     </ul>
                                     <div class="content">
-                                        <h2>1. Giới thiệu giày cầu lông Yonex Cascade Drive 2 - Đen chính hãng</h2>
+                                        <!-- <h2>1. Giới thiệu giày cầu lông Yonex Cascade Drive 2 - Đen chính hãng</h2>
                                         <p>
                                             <a href="#">Giày cầu lông Yonex Cascade Drive 2 - Đen</a>
                                             chính hãng là dòng mới nhất mới được ra mắt trong năm 2023 với những đặc điểm 
@@ -424,7 +372,7 @@
                                             <b>- Inner Bootie:</b> Lớp vải Bootie nối giữa thân giày và lưỡi gà với nhau cho cảm giác khi mang giày cầu lông 
                                             vào sẽ rất êm ái và phần cổ giày sẽ ôm khít mắt cá chân.
                                         </p>
-                                        <p><b>Xem thêm:</b> các sản phẩm <a href="#">giày cầu lông</a> với nhiều phân khúc giá tại <b>Shop VNB.</b></p>
+                                        <p><b>Xem thêm:</b> các sản phẩm <a href="#">giày cầu lông</a> với nhiều phân khúc giá tại <b>Shop VNB.</b></p> -->
                                     </div>
                                     <button type="button" class="btn btn--view-more">
                                         <span class="more-text">Xem thêm</span>
@@ -652,17 +600,18 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Right -->
                         <div class="details-pro col-md-12 col-lg-3">
                             <div class="mt-4">
                                 <fieldset class="pro-discount cn_con_hang">
                                     <legend>ĐANG CÓ HÀNG TẠI</legend>
                                     <div class="cn_pc">
                                         <ul class="list-cn mt-4">
-                                            <li class="item"><a href="#">VNB Nam Từ Liêm</a></li>
+                                            <!-- <li class="item"><a href="#">VNB Nam Từ Liêm</a></li>
                                             <li class="item"><a href="#">VNB Bắc Từ Liêm</a></li>
                                             <li class="item"><a href="#">VNB Hoàng Mai</a></li>
                                             <li class="item"><a href="#">VNB Hoàn Kiếm</a></li>
-                                            <li class="item"><a href="#">VNB Long Biên</a></li>
+                                            <li class="item"><a href="#">VNB Long Biên</a></li> -->
                                         </ul>
                                     </div>
                                 </fieldset>
@@ -671,7 +620,7 @@
                                 <div class="title-head">Danh mục sản phẩm</div>
                                 <nav class="nav-category">
                                     <ul class="nav-list">
-                                        <li class="nav-item nav-item-lv1">
+                                        <!-- <li class="nav-item nav-item-lv1">
                                             <div class="nav-lv1">
                                                 <a href="#">Vợt Cầu Lông</a>
                                                 <i class="bi bi-plus-lg icon icon-animation"></i>
@@ -688,26 +637,6 @@
                                                 </li>
                                                 <li class="dropdown-submenu nav-item">
                                                     <a href="#">Vợt cầu lông 4</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item nav-item-lv1">
-                                            <div class="nav-lv1">
-                                                <a href="#">Quần Cầu Lông</a>
-                                                <i class="bi bi-plus-lg icon"></i>
-                                            </div>
-                                            <ul class="menu_down nav-lv2">
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Quần Cầu Lông 1</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Quần Cầu Lông 2</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Quần Cầu Lông 3</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Quần Cầu Lông 4</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -716,53 +645,7 @@
                                                 <a href="#">Áo Cầu Lông</a>
                                                 <i class="bi bi-plus-lg icon"></i>
                                             </div>
-                                        </li>
-                                        <li class="nav-item nav-item-lv1">
-                                            <div class="nav-lv1">
-                                                <a href="#">Giày Cầu Lông</a>
-                                                <i class="bi bi-plus-lg icon"></i>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item nav-item-lv1">
-                                            <div class="nav-lv1">
-                                                <a href="#">Vợt Cầu Lông</a>
-                                                <i class="bi bi-plus-lg icon icon-animation"></i>
-                                            </div>
-                                            <ul class="menu_down nav-lv2">
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 1</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 2</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 3</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 4</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item nav-item-lv1">
-                                            <div class="nav-lv1">
-                                                <a href="#">Vợt Cầu Lông</a>
-                                                <i class="bi bi-plus-lg icon icon-animation"></i>
-                                            </div>
-                                            <ul class="menu_down nav-lv2">
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 1</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 2</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 3</a>
-                                                </li>
-                                                <li class="dropdown-submenu nav-item">
-                                                    <a href="#">Vợt cầu lông 4</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </nav>
                             </div>
@@ -848,6 +731,10 @@
         </div>
     </footer>
 
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets//js/header.js"></script>
+    <script src="../assets/js/product_detail.js"></script>
+
     <script>
         // Select button show more content description product
         const btnViewMore = document.querySelector('.mota-product .btn--view-more')
@@ -873,9 +760,5 @@
             }
         }
     </script>
-
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/product_detail.js"></script>
-    <script src="../assets/js/nav_category.js"></script>
 </body>
 </html>

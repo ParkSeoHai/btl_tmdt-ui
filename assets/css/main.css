@@ -711,13 +711,10 @@ a{
 }
 
 .page-store .info-store{
-<<<<<<< HEAD
   overflow: hidden;
   overflow-y: auto;
-=======
     border-bottom: 1px #ccc solid;
   max-height: 500px;
->>>>>>> 01d91b713f8126bf8810d25504e21e34b6fdc5a6
 }
 .page-store .info-store .store-list{
   background: #fff;
@@ -733,7 +730,6 @@ a{
 
 .page-store .info-store .store-list a:hover{
     color: #22aaff;
->>>>>>> 01d91b713f8126bf8810d25504e21e34b6fdc5a6
 }
 
 .page-store .info-store .store-list .store-name{
@@ -872,15 +868,6 @@ a{
     background: var(--color-primary);
 }
 /*end-contact-view*/
-
-.infomation-badminton{
-
-}
-
-.infomation-badminton-list{
-
-}
-
 .infomation-badminton-search{
     margin-bottom: 35px;
 }
@@ -1173,11 +1160,7 @@ h1.title-head{
   margin-bottom: 15px;
   border: 1px solid #eaebf3;
 }
-@media (min-width: 992px).col-lg-9 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-fieldset {
+.page-login .form-signup fieldset {
   border: 1px solid #ebebeb;
   padding: 15px;
 }

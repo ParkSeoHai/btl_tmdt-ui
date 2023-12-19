@@ -1,16 +1,15 @@
 'use strict';
 
-GetProductById();
-
 // Get product by id
 async function GetProductById() {
     const productId = window.localStorage.getItem('proId');
     const url = `https://localhost:44360/api/Product/GetProductById/${productId}`;
     const res = await fetch(url);
     const data = await res.json();
+    await DisplayBreadcrumbProDetail(data);
     await DisplayProductDetail(data);
+    await DisplayDescriptionProDetail(data);
 }
-
 // Hiển thị product detail
 async function DisplayProductDetail(product) {
     const productDetailRoot = document.querySelector('.layout-product .product-detail-container');
@@ -22,26 +21,13 @@ async function DisplayProductDetail(product) {
         <div class="swiper-container">
             <div class="swiper-wrapper d-flex">
                 <div class="swiper-slide swiper-slide-thumb-active">
-                    <img src="../assets/img/product-detail-1.webp">
+                    <img src="${product.DefaultImage}">
                 </div>
-                <div class="swiper-slide" tabindex="2">
-                    <img src="../assets/img/product-detail-2.webp">
-                </div>
-                <div class="swiper-slide" tabindex="3">
-                    <img src="../assets/img/product-detail-3.webp">
-                </div>
-                <div class="swiper-slide" tabindex="4">
-                    <img src="../assets/img/product-detail-4.webp">
-                </div>
-                <div class="swiper-slide" tabindex="5">
-                    <img src="../assets/img/product-detail-5.webp">
-                </div>
-                <div class="swiper-slide" tabindex="6">
-                    <img src="../assets/img/product-detail-6.webp">
-                </div>
-                <div class="swiper-slide" tabindex="7">
-                    <img src="../assets/img/product-detail-7.webp">
-                </div>
+                ${product.Images.$values.map(img => `
+                    <div class="swiper-slide">
+                        <img src="${img.Url}">
+                    </div>
+                `).join("")}
             </div>
             <div class="swiper-button next">
                 <i class="bi bi-chevron-right"></i>
@@ -99,15 +85,19 @@ async function DisplayProductDetail(product) {
                 </p>
                 <p>
                     <span class="icon"><i class="bi bi-check-square-fill"></i></span>
-                    <span>Bảo hành chính hãng theo nhà sản xuất (Trừ hàng nội địa, xách tay)</span>
+                    <span>Sơn logo mặt vợt miễn phí</span>
                 </p>
                 <p>
                     <span class="icon"><i class="bi bi-check-square-fill"></i></span>
-                    <span>Bảo hành chính hãng theo nhà sản xuất (Trừ hàng nội địa, xách tay)</span>
+                    <span>Bảo hành lưới đan trong 72 giờ</span>
                 </p>
                 <p>
                     <span class="icon"><i class="bi bi-check-square-fill"></i></span>
-                    <span>Bảo hành chính hãng theo nhà sản xuất (Trừ hàng nội địa, xách tay)</span>
+                    <span>Thay gen vợt miễn phí trọn đời</span>
+                </p>
+                <p>
+                    <span class="icon"><i class="bi bi-check-square-fill"></i></span>
+                    <span>Voucher giảm giá cho lần mua hàng tiếp theo</span>
                 </p>
             </div>
             <div class="uu_dai">
@@ -116,29 +106,33 @@ async function DisplayProductDetail(product) {
             </div>
         </div>
         <form class="form-product">
-            <fieldset class="title">Chọn size:</fieldset>
-            <div class="select-size d-flex gap-2 pt-3">
-                <div class="item">
-                    <input type="radio" checked class="btn-check" name="options-base" id="size-36" autocomplete="off">
-                    <label class="btn btn-size" for="size-36">36</label>
-                </div>
-                <div class="item">
-                    <input type="radio" class="btn-check" name="options-base" id="size-37" autocomplete="off">
-                    <label class="btn btn-size" for="size-37">37</label>
-                </div>
-                <div class="item">
-                    <input type="radio" class="btn-check" name="options-base" id="size-38" autocomplete="off">
-                    <label class="btn btn-size" for="size-38">38</label>
-                </div>
-                <div class="item">
-                    <input type="radio" class="btn-check" name="options-base" id="size-39" autocomplete="off">
-                    <label class="btn btn-size" for="size-39">39</label>
-                </div>
-                <div class="item">
-                    <input type="radio" class="btn-check" name="options-base" id="size-40" autocomplete="off">
-                    <label class="btn btn-size" for="size-40">40</label>
-                </div>
-            </div>
+            ${
+                product.Name.toLowerCase().includes('giày cầu lông') ? `
+                    <fieldset class="title">Chọn size:</fieldset>
+                    <div class="select-size d-flex gap-2 pt-3">
+                        <div class="item">
+                            <input type="radio" checked class="btn-check" name="options-base" id="size-36" autocomplete="off">
+                            <label class="btn btn-size" for="size-36">36</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" class="btn-check" name="options-base" id="size-37" autocomplete="off">
+                            <label class="btn btn-size" for="size-37">37</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" class="btn-check" name="options-base" id="size-38" autocomplete="off">
+                            <label class="btn btn-size" for="size-38">38</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" class="btn-check" name="options-base" id="size-39" autocomplete="off">
+                            <label class="btn btn-size" for="size-39">39</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" class="btn-check" name="options-base" id="size-40" autocomplete="off">
+                            <label class="btn btn-size" for="size-40">40</label>
+                        </div>
+                    </div>
+                ` : ""
+            }
             <div class="d-flex align-items-center mt-3">
                 <div class="number-cart">
                     <div class="input_number_product">
@@ -229,3 +223,161 @@ async function DisplayProductDetail(product) {
     swiper.addEventListener('mouseup', dragStop);
     swiper.addEventListener('mouseleave', dragStop);
 }
+
+// Hiển thị description product
+async function DisplayDescriptionProDetail(product) {
+    const descriptionRoot = document.querySelector('.layout-product .mota-product .content');
+    const html = product.Description ? product.Description : 
+        `
+            <h2>1. Giới thiệu ${product.Name}</h2>
+            <p>
+                <a href="#">${product.Name}</a>
+                chính hãng là dòng mới nhất mới được ra mắt trong năm 2023 với những đặc điểm 
+                kế thừa sự TOÀN DIỆN của đàn anh SHB 65 trước đó. 
+            </p>
+            <p>Phần trên của giày được trang trí với họa tiết logo được ép nổi, tạo nên sự sang trọng 
+                cho người sử dụng. Lớp da tổng hợp kết hợp với lỗ thoáng khí trên lớp vải mesh giúp giữ 
+                cho đôi chân luôn thoải mái và thông thoáng, đặc biệt là trong điều kiện thời tiết khô 
+                nóng khi phải hoạt động liên tục trên sân trong thời gian dài.
+            </p>
+            <img src="${product.DefaultImage}" alt="">
+            <p>
+                lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium, adipisci aliquam asperiores atque autem beatae
+                commodi consequatur cumque cupiditate delectus doloremque
+                doloribus ducimus ea earum eius eligendi eos error est
+                exercitationem explicabo fugiat fugit hic id illum impedit
+                incidunt ipsa ipsum iure laboriosam laborum libero magnam
+            </p>
+            <p>
+                - Thương hiệu: ${product.Brand}
+            </p>
+            <h2>2. Công nghệ và các ưu điểm nổi bật trên giày cầu lông Yonex Cascade Drive 2 - Đen chính hãng</h2>
+            <p><b>- POWER CUSHION:</b> Một vật liệu nhẹ, hấp thụ tác động được phát triển độc lập bởi Yonex, nhanh chóng trở lại 
+                hình dạng ban đầu sau khi chịu lực tác động, chuyển đổi năng lượng tác động đó thành năng lượng cung cấp 
+                cho các chuyển động tiếp theo để thực hiện các bước chân nhanh và nhẹ.
+            </p>
+        `;
+    descriptionRoot.innerHTML = html;
+}
+
+// Hiển thị breadcrumb
+async function DisplayBreadcrumbProDetail(product) {
+    const breadcrumbRoot = document.querySelector('.section-breadcrumb .breadcrumb-main');
+    const html = `
+        <li class="breadcrumb-item"><a href="/index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">${product.Name}</li>
+    `;
+    breadcrumbRoot.innerHTML = html;
+}
+
+// Get shop address
+async function GetShopAddressProDetail() {
+    const url = 'https://localhost:44360/api/ShopAddress/GetAllShopAddress';
+    const res = await fetch(url);
+    const data = await res.json();
+    await DisplayShopAddressProDetail(data.$values);
+}
+// Hiển thị shop address
+async function DisplayShopAddressProDetail(shopAddress) {
+    const shopAddressRoot = document.querySelector('.layout-product .details-pro .list-cn');
+    shopAddress.forEach(address => {
+        const html = `
+            <li class="item">${address.Title}</li>
+        `;
+        shopAddressRoot.innerHTML += html;
+    });
+}
+
+// Get category
+async function GetCategoriesProDetail() {
+    const url = 'https://localhost:44360/api/Category/GetAllCategories';
+    const res = await fetch(url);
+    const data = await res.json();
+    await DisplayCategoryProDetail(data.$values);
+}
+
+// Hiển thị category product
+async function DisplayCategoryProDetail(categories) {
+    const categoryRoot = document.querySelector('.layout-product .details-pro .nav-list');
+    categories.forEach(category => {
+        const html = `
+            <li class="nav-item nav-item-lv1">
+                <div class="nav-lv1">
+                    <a href="${category.Name}" data-id="${category.Id}">${category.Name}</a>
+                    <i class="bi bi-plus-lg icon icon-animation"></i>
+                </div>
+                ${
+                    category.Subcategories.$values.length > 0 ? `
+                        <ul class="menu_down nav-lv2">
+                        ${
+                            category.Subcategories.$values.map(subCategory => `
+                                <li class="nav-item">
+                                    <a href="${subCategory.Name}" data-id="${subCategory.Id}">${subCategory.Name}</a>
+                                </li>
+                            `).join("")
+                        }
+                        </ul>
+                    ` : ""
+                }
+            </li>
+        `;
+        categoryRoot.innerHTML += html;
+    });
+
+    // Xử lý các sự kiện category
+    // Select all icon mở menu down
+    const iconOpenMenuDowns = document.querySelectorAll('.nav-category .nav-item-lv1 .icon');
+    // Select all nav item
+    const navItems = document.querySelectorAll('.nav-category .nav-item-lv1');
+    navItems.forEach(item => {
+        // Kiểm tra xem có menu down hay không
+        const menuDown = item.querySelector('.menu_down');
+        // Nếu không có menu down thì ẩn icon
+        if(!menuDown) {
+            item.querySelector('.icon').style.display = 'none';
+        }
+    })
+    iconOpenMenuDowns.forEach(icon => {
+        // Thêm sự kiện click vào icon
+        icon.addEventListener('click', function () {
+            // Lấy ra thẻ cha
+            const parentTag = icon.parentNode;
+            const menuDown = parentTag.parentNode.querySelector('.menu_down');
+            if(menuDown) {
+                // Kiểm tra xem menu down có đang mở hay không
+                const isOpen = parentTag.classList.contains('openMenuDown');
+                if(isOpen) {
+                    // Đóng menu down
+                    menuDown.style.display = 'none';
+                    parentTag.classList.remove('openMenuDown');
+
+                    /* Animation icon */
+                    // this.classList.remove('icon-animation__close')
+                    this.style.animation = "rotateIconNavClose 0.2s ease-in-out";
+
+                    // Thay đổi icon
+                    this.classList.remove('bi-dash-lg');
+                    this.classList.add('bi-plus-lg');
+
+                } else {
+                    // Mở menu down
+                    menuDown.style.display = 'block';
+                    parentTag.classList.add('openMenuDown');
+
+                    /* Animation icon */
+                    // this.classList.add('icon-animation__open')
+                    this.style.animation = "rotateIconNavOpen 0.2s ease-in-out";
+
+                    // Thay đổi icon
+                    this.classList.remove('bi-plus-lg');
+                    this.classList.add('bi-dash-lg');
+                }
+            }
+        })
+    })
+}
+
+GetProductById();
+GetShopAddressProDetail();
+GetCategoriesProDetail();

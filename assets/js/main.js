@@ -1,62 +1,4 @@
-const userId = localStorage.getItem('userId');
-if(userId) {
-    const accListElement = document.querySelector('#header .acc-list');
-    accListElement.innerHTML = `
-        <ul>
-        <li>
-            <a href="#">
-                <span>Trang cá nhân</span>
-            </a>
-        </li>
-        <li>
-            <a href="/dang-xuat" onclick="dangXuat(event)">
-                <span>Đăng xuất</span>
-            </a>
-        </li>
-        </ul>
-    `;
-}
-
-// Đăng xuất user
-function dangXuat(event) {
-    event.preventDefault();
-    localStorage.removeItem('userId');
-    window.location.href = '/';
-}
-
-// Fetch categories dữ liệu từ API
-async function getCategories() {
-    const url = 'https://localhost:44360/api/Category/GetAllCategories';
-    const res = await fetch(url);
-    const data = await res.json();
-
-    displayCategory(data);
-}
-
-// Hiển thị categories
-function displayCategory(categories) {
-    const bottomHeader = document.querySelector('#header .bottom-header .list-menu-row');
-    categories.$values.forEach(category => {
-        let col = `
-            <div class="col list-menu-member">
-                <div class="col-heading">
-                    <a class="col-header" href="">${category.Name}</a>
-                </div>
-                <ul class="d-inline list-sub-category">
-        `;
-
-        category.Subcategories.$values.forEach(subcategory => {
-            const liItem = `
-                <li><a href="">${subcategory.Name}</a></li>
-            `;
-
-            col += liItem;
-        });
-        col += '</ul></div>';
-
-        bottomHeader.innerHTML += col;
-    });
-}
+'use strict';
 
 // Fetch category new product dữ liệu từ API
 async function getCategoryNew() {
@@ -180,6 +122,5 @@ function displayProductsNew(products) {
     })
 }
 
-getCategories();
 getCategoryNew();
 getProductsNew();
