@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/loader.css">
 </head>
 <body>
 <!-- Header -->
@@ -210,14 +211,23 @@
             </nav>
         </div>
     </section>
-    <form class="login-view d-flex justify-content-center flex-column container" action="">
+    <!-- Form login -->
+    <form onsubmit="submitFormLogin(event)" class="login-view d-flex justify-content-center flex-column container">
         <div class="title_modules text-center">
             <h2>ĐĂNG NHẬP</h2>
         </div>
-        <input type="text" placeholder="Email/Số ĐT">
-        <input type="password" placeholder="Mật khẩu">
-        <button type="button">ĐĂNG NHẬP</button>
-        <p><a href="">Quên mật khẩu</a> / <a href="">Đăng kí</a></p>
+        <span class="text-danger message-error"></span>
+        <input type="email" name="email" class="email" placeholder="Email" required>
+        <input type="password" name="password" class="password" placeholder="Mật khẩu" required>
+        <button type="submit">ĐĂNG NHẬP</button>
+        <p>
+            <a href="#">Quên mật khẩu</a> / 
+            <a href="../views/register-view.html">Đăng ký</a>
+        </p>
+
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
     </form>
 </main>
 <footer id="footer">
@@ -295,5 +305,6 @@
 </footer>
 
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/login.js"></script>
 </body>
 </html>

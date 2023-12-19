@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets//css/loader.css">
 </head>
 <body>
 <!-- Header -->
@@ -210,17 +211,21 @@
             </nav>
         </div>
     </section>
-    <form class="register-view d-flex justify-content-center flex-column container" action="">
+    <form onsubmit="submitFormRegister(event)" class="register-view d-flex justify-content-center flex-column container">
         <div class="title_modules text-center">
             <h2>ĐĂNG KÝ</h2>
         </div>
-        <p>Đã có tài khoản đăng nhập <a href="">Tại đây</a></p>
-        <input type="text" placeholder="Nhập tên của bạn">
-        <input type="text" placeholder="Nhập email của bạn">
-        <input type="text" placeholder="Số điện thoại">
-        <input type="text" placeholder="Mật khẩu">
-        <input type="text" placeholder="Nhập lại mật khẩu">
-        <button type="button">ĐĂNG KÍ</button>
+        <p>Đã có tài khoản đăng nhập <a href="../views/login-view.html">Tại đây</a></p>
+        <input type="text" name="name" class="name" placeholder="Nhập tên của bạn" required>
+        <input type="email" name="email" class="email" placeholder="Nhập email của bạn" required>
+        <input type="text" name="phoneNumber" class="phone-number" placeholder="Số điện thoại" required>
+        <input type="password" name="password" class="password" placeholder="Mật khẩu" required>
+        <input type="password" name="confirmPassword" class="confirm-password" placeholder="Nhập lại mật khẩu" required>
+        <button type="submit" class="btn-register">ĐĂNG KÝ</button>
+    
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
     </form>
 </main>
 <footer id="footer">
@@ -298,5 +303,6 @@
 </footer>
 
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/register.js"></script>
 </body>
 </html>
