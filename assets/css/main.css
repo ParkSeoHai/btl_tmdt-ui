@@ -1101,8 +1101,106 @@ a{
 .page-login .form-signup{
   margin-top: 10px;
 }
-h1 .title-head{
-  font-size: 3rem;
+
+h1.title-head{
+  font-size: 2rem;
   line-height: 3rem;
+  font-weight: 400;
+  color: #212B25;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.btn-blue{
+  background: var(--color-primary);
+  color: #f7f8f9;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  border: 1px solid var(--color-primary);
+  line-height: 4.5rem;
+  height: 45px;
+  padding: 0 50px;
+}
+.page-login .form-signup .form-group{
+  margin-bottom: 0;
+  padding: 0;
+}
+.form-group{
+  margin: 0;
+  border: 0;
+}
+.page-login .form-signup .form-group label{
+  margin-top: 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #333;
+}
+.page-login .form-signup .form-group input{
+  height: 45px;
+  padding: 0 20px;
+  color: #333;
+  line-height: 45px;
+  border: 1px solid #e1e1e1;
+  box-shadow: none;
+  background: #fff;
+  margin-bottom: 15px;
+  width: 100%;
+  margin-top: 15px;
+}
+.form-group .form-control{
+  display: block;
+  min-height: 40px;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px 15px;
+  line-height: 2rem;
+  margin-bottom: 15px;
+  border: 1px solid #eaebf3;
+}
+@media (min-width: 992px).col-lg-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+fieldset {
+  border: 1px solid #ebebeb;
+  padding: 15px;
+}
+.ele_birthday select{
+  width: 33.33% !important;
+  float: left;
+  appearance:none;
+  background-image: url("../img/fix-account/ico-select.png") ;
+  background-repeat:no-repeat ;
+  background-position:right 10px center;
+  background-color: #fff;
+  text-indent: 0.01px;
+  text-overflow: '';
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  padding: 0 110px 0 15px;
+  max-width: 100%;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  padding-right: 0;
+}
+.page-login .form-signup .btn_50, .btn-full{
+  background: var(--color-primary);
+  color: #f7f8f9;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  border: 1px solid var(--color-primary);
+  line-height: 4.5rem;
+  height: 45px;
+  padding: 0 50px;
+  width: 100%;
+}
+.ele_birthday select option{
+  width: 90px;
+  padding-left: 0;
 }
 
