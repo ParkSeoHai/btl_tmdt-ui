@@ -88,10 +88,10 @@
     justify-content: center;
     align-items: center;
 }
-.basket{
+.top-header-left .basket{
     position: relative;
 }
-.basket p{
+.top-header-left .basket p{
     position: absolute;
     background: var(--color-primary);
     color: white;
@@ -101,6 +101,17 @@
     border-radius: 50%;
     padding: 2px 4px;
 }
+
+.top-header-left span {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* .top-header-left span:hover {
+    color: #fff;
+} */
 
 .top-header-left-btn .top-header-left-btn-icon{
     display: flex;
@@ -369,6 +380,10 @@
     background: var(--color-primary);
 }
 
+.acc-list a:hover>span {
+    color: white;
+}
+
 .acc-list a span {
     margin-left: 6px;
 }
@@ -387,10 +402,12 @@
 }
 
 .basket-list:hover>.basket-member{
-    display: flex;
+    display: block;
 }
 
 .basket-member{
+    display: none;
+    width: 320px;
     position: absolute;
     top: 46px;
     right: 0;
@@ -400,19 +417,149 @@
     background: white;
     z-index: 3;
     border-radius: 5px;
-    display: none;
     box-shadow: rgba(0,0,0,0.18) 0 6px 12px 0;
     border: 1px solid #efefef;
+    color: #333;
+    overflow: hidden;
 }
-.basket-member i{
+.basket-member .basket-empty i{
     font-size: 80px;
-    margin: 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
 }
 
-.basket-member span{
-    width: 340px;
+.basket-member .basket-empty span{
+    display: block;
     padding: 0 5px;
     text-align: center;
     font-size: 1.4rem;
+    margin-bottom: 15px;
 }
 
+/* Giỏ hàng có sản phẩm */
+.basket-member .basket-not-empty {
+    cursor: context-menu;
+}
+
+.basket-member .basket-not-empty .title_cart-header {
+    padding: 7px;
+    background-color: var(--color-primary);
+}
+
+.basket-not-empty .title_cart-header a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.basket-not-empty .cart-item-header-img {
+    width: 20%;
+}
+
+.basket-not-empty .cart-item-header-img img {
+    width: 100%;
+}
+
+.basket-not-empty .cart_body-header {
+    padding: 10px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.basket-not-empty .cart_body-header::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F2F2F2
+}
+
+.basket-not-empty .cart_body-header::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    background-color: #22aaff
+}
+  
+.basket-not-empty .cart_body-header::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-color: #F2F2F2
+}
+
+.basket-not-empty .cart-item-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+
+.basket-not-empty .cart-item-header .cart-item-info-header {
+    width: 80%;
+    padding-left: 15px;
+}
+
+.basket-not-empty .cart-item-name-header {
+    padding-right: 25px;
+    position: relative;
+}
+
+.basket-not-empty .cart-item-name-header .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.basket-not-empty .cart-item-name-header .icon:hover {
+    color: var(--color-primary);
+}
+
+.basket-not-empty .cart-item-header .cart-item-info-header a {
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.basket-not-empty .cart-item-header .cart-item-info-header a:hover {
+    color: var(--color-primary);
+}
+
+.basket-not-empty  .cart-item-info-header .cart-quantity input {
+    width: 30px;
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.basket-not-empty  .cart-item-info-header .cart-quantity button {
+    border: 1px solid #ccc;
+    width: 25px;
+    background-color: #fff;
+}
+
+.basket-not-empty  .cart-item-info-header .cart-price span {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.basket-not-empty .cart-bottom-header {
+    padding: 10px;
+}
+
+.basket-not-empty .cart-bottom-header .cart-bottom-price span {
+    font-size: 1.5rem;
+}
+
+.basket-not-empty .cart-bottom-header .cart-bottom-price span:last-child {
+    color: var(--color-primary);
+}
+
+.basket-not-empty .cart-bottom-header button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--color-primary);
+}

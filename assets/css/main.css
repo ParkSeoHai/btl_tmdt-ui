@@ -423,7 +423,7 @@ a{
   -webkit-box-orient: vertical;
   white-space: inherit;
 }
-.item_product_main .product-info a{
+.item_product_main .product-info .pro-sale-link{
   color: #333E44;
 }
 .item_product_main .product-info .price-box{
