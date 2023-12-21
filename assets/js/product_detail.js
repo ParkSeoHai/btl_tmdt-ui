@@ -55,7 +55,7 @@ async function DisplayProductDetail(product) {
             </span>
         </div>
         <div class="price-box">
-            <span class="special-price">${product.PriceNew} ₫</span>
+            <span class="special-price">${product.PriceNew} </span><span>₫</span>
             <span class="old-price">
                 <span class="text">Giá niêm yết: </span>
                 <del>${product.PriceOld} ₫</del>
@@ -144,7 +144,9 @@ async function DisplayProductDetail(product) {
                     </div>
                 </div>
                 <div class="btn-add_cart">
-                    <button type="submit" class="btn btn-outline-add">THÊM VÀO GIỎ HÀNG</button>
+                    <button type="button" class="btn btn-outline-add" onclick="HandleAddCart()">
+                        THÊM VÀO GIỎ HÀNG
+                    </button>
                 </div>
             </div>
         </form>
@@ -222,6 +224,49 @@ async function DisplayProductDetail(product) {
     swiper.addEventListener('mousemove', dragging);
     swiper.addEventListener('mouseup', dragStop);
     swiper.addEventListener('mouseleave', dragStop);
+}
+
+// Xử lý thêm vào giỏ hàng
+async function HandleAddCart() {
+    const sessionId = document.cookie.split('; ').find(row => row.startsWith('cookieUser')).split('=')[1];
+    const productId = document.querySelector('.product-detail-right .product-top .code').textContent;
+    const quantity = document.querySelector('.product-detail-right .input_number_product input').value;
+    const price = document.querySelector('.product-detail-right .price-box .special-price').textContent;
+    
+    const cartInfo = {
+        SessionId: sessionId.toString(),
+        ProductId: productId,
+        Quantity: Number(quantity),
+        Price: Number(price)
+    };
+
+    // Gửi request lên server
+    await AddProductCart(cartInfo);
+}
+
+// Add product cart
+async function AddProductCart(cartRequest) {
+    const url = 'https://localhost:44360/api/Cart/AddProductCart';
+    const options = {
+        method: 'POST',
+        body: JSON.stringify(cartRequest),
+        headers: {
+            'content-type': 'application/json'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+
+        if (response.ok) {
+            // Hiển thị lại cart
+            await checkCookieUser();
+        } else {
+            console.error('Error updating cart. Status:', response.status);
+        }
+    } catch (error) {
+        console.error('Network error during cart update:', error);
+    }
 }
 
 // Hiển thị description product
