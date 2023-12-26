@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/loader.css">
-    <link rel="preload" as="style" href="bootstrap/scss/forms/ajaxcart.scss" type="text/css">
+    <link href="node_modules/toastr/build/toastr.css" rel="stylesheet"/>
+    <link rel="preload" as="style" href="/node_modules/bootstrap/scss/forms/ajaxcart.scss" type="text/css">
 </head>
 <body>
     <!-- Header -->
@@ -285,11 +286,11 @@
                     </a>
                     <ul class="list-train-member">
                         <li><a href="./views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
-                        <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
-                        <li><a href="">Công nghệ sản phẩm</a></li>
+                        <!-- <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+                        <li><a href="">Công nghệ sản phẩm</a></li> -->
                     </ul>
                 </li>
-                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="./views/introduction-view.html">GIỚI THIỆU</a></li>
                 <li><a href="./views/contact-view.html">LIÊN HỆ</a></li>
             </ul>
         </div>
@@ -516,87 +517,87 @@
       </section>
       <!-- Section banner -->
       <section class="section_banner">
-          <div class="container">
-              <div class="title_modules text-center">
-                  <h2>
-                      <a href="#"><span>Sản phẩm cầu lông</span></a>
-                  </h2>
-              </div>
-              <div class="row">
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-1.webp" alt="">
-                          <div class="content_banner">
-                              <p>Vợt cầu lông</p>
-                          </div>
-                          <a href="#" title="Vợt cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-2.webp" alt="">
-                          <div class="content_banner">
-                              <p>Giày cầu lông</p>
-                          </div>
-                          <a href="#" title="Giày cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-3.webp" alt="">
-                          <div class="content_banner">
-                              <p>Áo cầu lông</p>
-                          </div>
-                          <a href="#" title="Áo cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-4.webp" alt="">
-                          <div class="content_banner">
-                              <p>Váy cầu lông</p>
-                          </div>
-                          <a href="#" title="Váy cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-5.webp" alt="">
-                          <div class="content_banner">
-                              <p>Quần cầu lông</p>
-                          </div>
-                          <a href="#" title="Quần cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-6.webp" alt="">
-                          <div class="content_banner">
-                              <p>Túi vợt cầu lông</p>
-                          </div>
-                          <a href="#" title="Túi vợt cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-7.webp" alt="">
-                          <div class="content_banner">
-                              <p>Balo cầu lông</p>
-                          </div>
-                          <a href="#" title="Balo cầu lông"></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-xl-3">
-                      <div class="snip_banner">
-                          <img src="assets/img/section_banner-8.webp" alt="">
-                          <div class="content_banner">
-                              <p>Phụ kiện cầu lông</p>
-                          </div>
-                          <a href="#" title="Phụ kiện cầu lông"></a>
-                      </div>
-                  </div>
-              </div>
+        <div class="container">
+          <div class="title_modules text-center">
+            <h2>
+              <a href="#"><span>Sản phẩm cầu lông</span></a>
+            </h2>
           </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-1.webp" alt="">
+                <div class="content_banner">
+                    <p>Vợt cầu lông</p>
+                </div>
+                <a href="Vợt cầu lông" data-id="B1700E70-36CC-4D1C-8492-D352B3AF8213" title="Vợt cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-2.webp" alt="">
+                <div class="content_banner">
+                    <p>Giày cầu lông</p>
+                </div>
+                <a href="Giày cầu lông" data-id="A64E2B18-836D-4CBF-B41D-107D9388C99D" title="Giày cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-3.webp" alt="">
+                <div class="content_banner">
+                    <p>Áo cầu lông</p>
+                </div>
+                <a href="Áo cầu lông" data-id="E879D5A7-3123-4CB7-A6E2-2ED97429744B" title="Áo cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-4.webp" alt="">
+                <div class="content_banner">
+                    <p>Váy cầu lông</p>
+                </div>
+                <a href="Váy cầu lông" data-id="244431D7-D403-4734-AE29-E091F5CF4821" title="Váy cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-5.webp" alt="">
+                <div class="content_banner">
+                    <p>Quần cầu lông</p>
+                </div>
+                <a href="Quần cầu lông" data-id="88476714-1515-414A-8403-9A63DA87E886" title="Quần cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-6.webp" alt="">
+                <div class="content_banner">
+                    <p>Túi vợt cầu lông</p>
+                </div>
+                <a href="Túi vợt cầu lông" data-id="ED920E96-9FBA-45C3-8120-72BE7EA98F4C" title="Túi vợt cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-7.webp" alt="">
+                <div class="content_banner">
+                    <p>Balo cầu lông</p>
+                </div>
+                <a href="Balo cầu lông" data-id="7F38ED69-65EA-424D-88AE-DD0699E67B68" title="Balo cầu lông"></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xl-3">
+              <div class="snip_banner">
+                <img src="assets/img/section_banner-8.webp" alt="">
+                <div class="content_banner">
+                    <p>Phụ kiện cầu lông</p>
+                </div>
+                <a href="Phụ kiện cầu lông" data-id="61EADE3F-40A7-4008-82B3-F70EF399C467" title="Phụ kiện cầu lông"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Section blog -->
       <section class="section-blog">
@@ -614,7 +615,7 @@
                           </div>
                           <div class="box-content">
                               <h3 class="text-center">
-                                  <a href="#" title="Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng">
+                                  <a href="./views/tintuc-system.html" title="Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng">
                                       Hướng dẫn bảo quản và sử dụng túi cầu lông Yonex đúng cách theo tiêu chuẩn của hãng
                                   </a>
                               </h3>
@@ -634,7 +635,7 @@
                           </div>
                           <div class="box-content">
                               <h3 class="text-center">
-                                  <a href="#" title="Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách">
+                                  <a href="./views/tintuc-system.html" title="Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách">
                                       Hướng dẫn lựa chọn giày cầu lông Yonex đúng cách
                                   </a>
                               </h3>
@@ -654,7 +655,7 @@
                           </div>
                           <div class="box-content">
                               <h3 class="text-center">
-                                  <a href="#" title="Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách.">
+                                  <a href="./views/tintuc-system.html" title="Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách.">
                                       Chọn giày cầu lông phù hợp và bảo quản giày cầu lông đúng cách
                                   </a>
                               </h3>
@@ -674,7 +675,7 @@
                           </div>
                           <div class="box-content">
                               <h3 class="text-center">
-                                  <a href="#" title="Cách check mã vợt yonex chính hãng đơn giản và chuẩn xác">
+                                  <a href="./views/tintuc-system.html" title="Cách check mã vợt yonex chính hãng đơn giản và chuẩn xác">
                                       Cách check mã vợt yonex chính hãng đơn giản và chuẩn xác
                                   </a>
                               </h3>
@@ -767,6 +768,10 @@
         </div>
 
     </footer>
+
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="node_modules/toastr/toastr.js"></script>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

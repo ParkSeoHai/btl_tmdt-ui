@@ -137,7 +137,7 @@ async function DisplayCart(cartRoot, cartProducts) {
                                         <button type="button" onclick="HandleButtonQuantity('+', this)" >+</button>
                                     </div>
                                     <div class="cart-price">
-                                        <span>${product.Price} đ</span>
+                                        <span>${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.Price)}</span>
                                     </div>
                                 </div>
                             </div>
@@ -149,9 +149,9 @@ async function DisplayCart(cartRoot, cartProducts) {
             <div class="cart-bottom-header">
                 <div class="cart-bottom-price d-flex justify-content-between">
                     <span>Tổng tiền</span>
-                    <span>${priceSum} đ</span>
+                    <span>${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(priceSum)}</span>
                 </div>
-                <button type="button" class="btn">Đặt hàng</button>
+                <button type="button" class="btn btn-dathang">Đặt hàng</button>
             </div>
         </div>
     `;
@@ -167,7 +167,22 @@ async function DisplayCart(cartRoot, cartProducts) {
             window.location.href = `/views/productDetail.html`;
         });
     });
+
+    // Xử lý sự kiện click button Đặt hàng
+    const btnOrder = document.querySelector('.basket-not-empty .cart-bottom-header .btn-dathang');
+    btnOrder.addEventListener('click', function (e) {
+        e.preventDefault();
+        const userId = localStorage.getItem('userId');
+        if(userId) {
+            window.location.href = `/views/thanh-toan.html`;
+        } else {
+            alert('Bạn cần đăng nhập để đặt hàng');
+            window.location.href = `/views/login-view.html`;
+        }
+    });
 }
+
+// 
 
 // Kiem tra cookieUser
 async function checkCookieUser() {
@@ -204,27 +219,83 @@ async function checkCookieUser() {
         const cartRoot = document.querySelector('.basket-member');
 
         const url = `https://localhost:44360/api/Cart/GetProductCart/${cookieUser}`;
+        // Get cart
         const res = await fetch(url);
-        const data = await res.json();
-        
-        const cartProducts = data.productCartDtos.$values;
-        if(cartProducts.length > 0) {
-            const iconCart = document.querySelector('#header .cart-icon-quantity');
-            iconCart.innerHTML = `
-                <i class="bi bi-cart-fill"></i>
-                <p>${cartProducts.length}</p>
-            `;
+        if(res.ok) {
+            const data = await res.json();
+            const cartProducts = data.productCartDtos.$values;
 
-            await DisplayCart(cartRoot, cartProducts);
+                const iconCart = document.querySelector('#header .cart-icon-quantity');
+                if(cartProducts.length > 0) {
+                    iconCart.innerHTML = `
+                        <i class="bi bi-cart-fill"></i>
+                        <p>${cartProducts.length}</p>
+                    `;
+
+                    await DisplayCart(cartRoot, cartProducts);
+                } else {
+                    cartRoot.innerHTML = '';
+                    iconCart.innerHTML = `
+                        <i class="bi bi-cart-fill"></i>
+                        <p>${cartProducts.length}</p>
+                    `;
+
+                    const html = `
+                        <div class="basket-empty">
+                            <i class="bi bi-bag-plus"></i>
+                            <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                        </div>
+                    `;
+                    cartRoot.innerHTML += html;
+                }
         } else {
-            const html = `
-                <div class="basket-empty">
-                    <i class="bi bi-bag-plus"></i>
-                    <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
-                </div>
-            `;
-            cartRoot.innerHTML += html;
+            // Xóa cookieUser
+            document.cookie = `cookieUser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
         }
+        
+        // await fetch(url)
+        //     .then(response => {
+        //         // Check response code 200
+        //         console.log(response);
+        //         if(!response.ok) {
+        //             // Xóa cookieUser
+        //             document.cookie = `cookieUser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        //         } else {
+        //             return response.json();
+        //         }
+        //     })
+        //     .then(async (data) => {
+        //         const cartProducts = data.productCartDtos.$values;
+
+        //         const iconCart = document.querySelector('#header .cart-icon-quantity');
+        //         if(cartProducts.length > 0) {
+        //             iconCart.innerHTML = `
+        //                 <i class="bi bi-cart-fill"></i>
+        //                 <p>${cartProducts.length}</p>
+        //             `;
+
+        //             await DisplayCart(cartRoot, cartProducts);
+        //         } else {
+        //             cartRoot.innerHTML = '';
+        //             iconCart.innerHTML = `
+        //                 <i class="bi bi-cart-fill"></i>
+        //                 <p>${cartProducts.length}</p>
+        //             `;
+
+        //             const html = `
+        //                 <div class="basket-empty">
+        //                     <i class="bi bi-bag-plus"></i>
+        //                     <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+        //                 </div>
+        //             `;
+        //             cartRoot.innerHTML += html;
+        //         }
+        //     })
+        //     .catch(error => {
+        //         // Xóa cookieUser
+        //         document.cookie = `cookieUser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        //         console.log(error);
+        //     })
     }
 }
 

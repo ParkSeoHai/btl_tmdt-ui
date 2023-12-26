@@ -102,7 +102,7 @@ function displayProductsNew(products) {
                         <a href="${product.Name}" data-id="${product.Id}" class="product-link" title="${product.Name}">${product.Name}</a>
                     </h3>
                     <div class="price-box">
-                        <span class="price">${product.PriceNew} ₫</span>
+                        <span class="price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceNew)}</span>
                     </div>
                 </div>
             </div>
@@ -121,6 +121,18 @@ function displayProductsNew(products) {
         });
     })
 }
+
+// Xử lý sự kiện click category
+const categoryLinks = document.querySelectorAll('.section_banner .snip_banner a');
+categoryLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const categoryId = link.dataset.id;
+        localStorage.setItem('CategoryId', categoryId);
+        localStorage.removeItem('subCategoryId');
+        window.location.href = '/views/product-category.html';
+    });
+});
 
 getCategoryNew();
 getProductsNew();

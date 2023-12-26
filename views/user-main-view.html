@@ -30,7 +30,7 @@
                     </div>
                     <div class="top-header-center-liststore">
                         <i class="hotline-map bi bi-map-fill"></i>
-                        <a href="../views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
+                        <a href="/views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
                     </div>
                     <div class="top-header-center-searchmember">
                         <input type="text" placeholder="Tìm sản phẩm...">
@@ -45,8 +45,8 @@
                       <span>TRA CỨU</span>
                       <div class="search-list arrow-menu">
                           <ul>
-                              <li><a href="../views/search-orders.html">Kiểm tra đơn hàng</a></li>
-                              <li><a href="../views/search-warranty.html">Kiểm tra bảo hành</a></li>
+                              <li><a href="/views/search-orders.html">Kiểm tra đơn hàng</a></li>
+                              <li><a href="/views/search-warranty.html">Kiểm tra bảo hành</a></li>
                           </ul>
                       </div>
                   </div>
@@ -58,13 +58,13 @@
                     <div class="acc-list arrow-menu">
                       <ul>
                           <li>
-                              <a href="../views/login-view.html">
+                              <a href="/views/login-view.html">
                                   <i class="bi bi-box-arrow-in-right icon"></i>
                                   <span>Đăng nhập</span>
                               </a>
                           </li>
                           <li>
-                              <a href="../views/register-view.html">
+                              <a href="/views/register-view.html">
                                   <i class="bi bi-person-add icon"></i>
                                   <span>Đăng ký</span>
                               </a>
@@ -85,20 +85,168 @@
                       </ul> -->
                     </div>
                   </div>
-                  <a href="../views/shopping-cart.html">
-                    <div class="basket top-header-left-btn basket-list">
-                        <div class="top-header-left-btn-icon">
-                            <i class="bi bi-cart-fill"></i>
-                            <p>0</p>
-                        </div>
-                        <span>GIỎ HÀNG</span>
-                        <div class="basket-member">
-                            <i class="bi bi-bag-plus"></i>
-                            <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
-                        </div>
+                  <div class="basket top-header-left-btn basket-list">
+                    <div class="top-header-left-btn-icon cart-icon-quantity">
+                        <!-- <i class="bi bi-cart-fill"></i>
+                        <p>0</p> -->
                     </div>
-                  </a>
+                    <span>GIỎ HÀNG</span>
+                    <div class="basket-member">
+                        <!-- Giỏ hàng trống -->
+                        <!-- <div class="basket-empty">
+                          <i class="bi bi-bag-plus"></i>
+                          <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                        </div> -->
+                        
+                        <!-- Giỏ hàng có sản phẩm -->
+                        <!-- <div class="basket-not-empty">
+                          <div class="title_cart-header">
+                            <a href="views/shoe-cart.html">Giỏ hàng</a>
+                          </div>
+
+                          <div class="cart_body-header">
+                            <div class="cart-item-header">
+                              <div class="cart-item-header-img">
+                                <a href="">
+                                  <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                                </a>
+                              </div>
+                              <div class="cart-item-info-header">
+                                <div class="cart-item-name-header">
+                                  <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                                  <div class="icon">
+                                    <i class="bi bi-x-circle"></i>
+                                  </div>
+                                </div>
+                                <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                                  <div class="d-flex cart-quantity">
+                                    <button type="button">-</button>
+                                    <input type="text" name="cart-quantity" value="1" min="1">
+                                    <button type="button">+</button>
+                                  </div>
+                                  <div class="cart-price">
+                                    <span>1.790.000 ₫</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cart-item-header">
+                              <div class="cart-item-header-img">
+                                <a href="">
+                                  <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                                </a>
+                              </div>
+                              <div class="cart-item-info-header">
+                                <div class="cart-item-name-header">
+                                  <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                                  <div class="icon">
+                                    <i class="bi bi-x-circle"></i>
+                                  </div>
+                                </div>
+                                <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                                  <div class="d-flex cart-quantity">
+                                    <button type="button">-</button>
+                                    <input type="text" name="cart-quantity" value="1" min="1">
+                                    <button type="button">+</button>
+                                  </div>
+                                  <div class="cart-price">
+                                    <span>1.790.000 ₫</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cart-item-header">
+                              <div class="cart-item-header-img">
+                                <a href="">
+                                  <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                                </a>
+                              </div>
+                              <div class="cart-item-info-header">
+                                <div class="cart-item-name-header">
+                                  <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                                  <div class="icon">
+                                    <i class="bi bi-x-circle"></i>
+                                  </div>
+                                </div>
+                                <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                                  <div class="d-flex cart-quantity">
+                                    <button type="button">-</button>
+                                    <input type="text" name="cart-quantity" value="1" min="1">
+                                    <button type="button">+</button>
+                                  </div>
+                                  <div class="cart-price">
+                                    <span>1.790.000 ₫</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cart-item-header">
+                              <div class="cart-item-header-img">
+                                <a href="">
+                                  <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                                </a>
+                              </div>
+                              <div class="cart-item-info-header">
+                                <div class="cart-item-name-header">
+                                  <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                                  <div class="icon">
+                                    <i class="bi bi-x-circle"></i>
+                                  </div>
+                                </div>
+                                <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                                  <div class="d-flex cart-quantity">
+                                    <button type="button">-</button>
+                                    <input type="text" name="cart-quantity" value="1" min="1">
+                                    <button type="button">+</button>
+                                  </div>
+                                  <div class="cart-price">
+                                    <span>1.790.000 ₫</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="cart-item-header">
+                              <div class="cart-item-header-img">
+                                <a href="">
+                                  <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                                </a>
+                              </div>
+                              <div class="cart-item-info-header">
+                                <div class="cart-item-name-header">
+                                  <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                                  <div class="icon">
+                                    <i class="bi bi-x-circle"></i>
+                                  </div>
+                                </div>
+                                <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                                  <div class="d-flex cart-quantity">
+                                    <button type="button">-</button>
+                                    <input type="text" name="cart-quantity" value="1" min="1">
+                                    <button type="button">+</button>
+                                  </div>
+                                  <div class="cart-price">
+                                    <span>1.790.000 ₫</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="cart-bottom-header">
+                            <div class="cart-bottom-price d-flex justify-content-between">
+                              <span>Tổng tiền</span>
+                              <span>1.777.444 đ</span>
+                            </div>
+                            <button type="button" class="btn">Đặt hàng</button>
+                          </div>
+                        </div> -->
+                    </div>
                 </div>
+              </div>
             </div>
         </div>
         <div class="bottom-header">
@@ -126,21 +274,21 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="../views/sale-off-view.html">SALE OFF</a></li>
-                <li><a href="../views/tintuc-view.html">TIN TỨC</a></li>
+                <li><a href="/views/sale-off-view.html">SALE OFF</a></li>
+                <li><a href="/views/tintuc-view.html">TIN TỨC</a></li>
                 <li><a href="#">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
                 <li class="list-train">
                     <a href="#" class="dropdown">HƯỚNG DẪN
                         <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul class="list-train-member">
-                        <li><a href="../views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
-                        <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
-                        <li><a href="">Công nghệ sản phẩm</a></li>
+                        <li><a href="/views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
+                        <!-- <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+                        <li><a href="">Công nghệ sản phẩm</a></li> -->
                     </ul>
                 </li>
-                <li><a href="#">GIỚI THIỆU</a></li>
-                <li><a href="../views/contact-view.html">LIÊN HỆ</a></li>
+                <li><a href="/views/introduction-view.html">GIỚI THIỆU</a></li>
+                <li><a href="/views/contact-view.html">LIÊN HỆ</a></li>
             </ul>
         </div>
     </header>
@@ -254,7 +402,8 @@
         </div>
     </footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/header.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/cart.js"></script>
     <script>
         const url = `https://localhost:44360/api/User/GetUserById/${userId}`;
         fetch(url)
@@ -266,10 +415,14 @@
                     <i class="bi bi-person-fill"></i><b>Họ Tên: ${data.UserName}</b><br>
                     <i class="bi bi-telephone-fill"></i><b>Số ĐT: ${data.PhoneNumber}</b><br>
                     <i class="bi bi-geo-alt-fill"></i><b>Địa Chỉ: ${data.Address}</b><br>
-                    <button class="update-info" type="button">SỬA THÔNG TIN</button>
+                    <button class="update-info" onclick="clickFixUser()" type="button">SỬA THÔNG TIN</button>
                 `;
             })
             .catch(error => console.log(error));
+
+        function clickFixUser() {
+          window.location.href = '/views/fix-infor-account-view.html'
+        }
     </script>
 </body>
 </html>

@@ -26,8 +26,8 @@ async function ShowSaleOff(products) {
                         <a href="${product.Name}" data-id="${product.Id}" class="pro-sale-link" title="${product.Name}">${product.Name}</a>
                     </h3>
                     <div class="price-box">
-                        <span class="price">${product.PriceNew} ₫</span>
-                        <span class="compare-price">${product.PriceOld} ₫</span>
+                        <span class="price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceNew)}</span>
+                        <span class="compare-price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceOld)}</span>
                     </div>
                 </div>
                 </div>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <main>
+        <div class="row thanh-toan">
+            <div class="col-lg-7">
+                <h1 class="shop-name">
+                    <a href="/">VNBSports</a>
+                </h1>
+                <div class="row">
+                    <div class="col-lg-6 px-lg-4">
+                        <div class="info">
+                            <!-- <h2 class="title">Thông tin nhận hàng</h2>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Họ và tên người nhận hàng</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Số điện thoại</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Địa chỉ</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 px-lg-4">
+                        <div class="payment-methods">
+                            <h2 class="title">Thanh toán</h2>
+                            <div class="block">
+                                <div class="form-check d-flex align-items-center mb-3">
+                                    <input class="form-check-input" onclick="handleAtm()" type="radio" name="method" id="flexRadioDefault" checked>
+                                    <label class="form-check-label" for="flexRadioDefault">
+                                        Thanh toán khi nhận hàng (COD)
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input" onclick="handleAtm()" type="radio" name="method" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Thanh toán qua ngân hàng
+                                    </label>
+                                </div>
+                                <div class="block-atm">
+                                    <p>Ngân hàng TP Bank - CN HA NOI</p>
+                                    <p>Số TK: 0379885603</p>
+                                    <p>Chủ TK: Đỗ Minh Hiếu</p>
+                                    <p>(Nội dung chuyển khoản: Tên + Số ĐT đặt hàng)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="products-block">
+                    <!-- <h2 class="title">Đơn hàng</h2>
+                    <div class="products">
+                        <div class="item">
+                            <div class="img-block">
+                                <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-3-trang-den-do-chinh-hang-71ga244303_1701804051.webp" alt="">
+                                <span>1</span>
+                            </div>
+                            <div class="product-name">Giày Cầu Lông Mizuno Wave Claw 3 - Trắng Đen Đỏ Chính Hãng (71GA244303)</div>
+                            <div class="product-price">2.900.000 ₫</div>
+                        </div>
+
+                        <div class="item">
+                            <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-3-trang-den-do-chinh-hang-71ga244303_1701804051.webp" alt="">
+                            <div class="product-name">Giày Cầu Lông Mizuno Wave Claw 3 - Trắng Đen Đỏ Chính Hãng (71GA244303)</div>
+                            <div class="product-price">2.900.000 ₫</div>
+                        </div>
+                    </div>
+                    <div class="price-sum">
+                        <p>Tổng cộng</p>
+                        <span>5.800.000 ₫</span>
+                    </div>
+                    <div class="actions">
+                        <a href="/">Quay về trang chủ</a>
+                        <button type="button" class="btn">ĐẶT HÀNG</button>
+                    </div>
+                    <div class="desc">
+                        <p>- Giá trên chưa bao gồm phí vận chuyển. Phí vận chuyển sẽ được nhân viên báo khi xác nhận đơn hàng.</p>
+                        <p>
+                            - Thời gian xử lý đơn hàng: Từ 8h00- 17h thứ 2 đến thứ 7. Các đơn hàng sau thời gian này sẽ được xử 
+                            lý vào ngày làm việc tiếp theo.
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function handleAtm() {
+            const radioAtm = document.querySelector('.form-check-input#flexRadioDefault2');
+            if(radioAtm.checked) {
+                document.querySelector('.block-atm').style.display = 'block';
+            } else {
+                document.querySelector('.block-atm').style.display = 'none';
+            }
+        }
+        
+        async function displayInfoUser() {
+            const userId = localStorage.getItem('userId');
+            const url = `https://localhost:44360/api/User/GetUserById/${userId}`;
+            const res = await fetch(url);
+            const data = await res.json();
+
+            const infoRoot = document.querySelector('.thanh-toan .info');
+
+            const html = `
+                <h2 class="title">Thông tin nhận hàng</h2>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" value="${data.UserName}" placeholder="name@example.com">
+                    <label for="floatingInput">Họ và tên người nhận hàng</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" value="${data.PhoneNumber}" placeholder="name@example.com">
+                    <label for="floatingInput">Số điện thoại</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" value="${data.Address}" placeholder="name@example.com">
+                    <label for="floatingInput">Địa chỉ</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" value="${data.Email}" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+            `;
+            infoRoot.innerHTML = html;
+        }
+
+        // Lấy cookieUser
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+            }
+            return "";
+        }
+
+        // Kiểm tra cookieUser đã tồn tại chưa
+        let cookieUser = getCookie('cookieUser');
+
+        async function displayProducts(cookieUser) {
+            const url = `https://localhost:44360/api/Cart/GetProductCart/${cookieUser}`;
+            const res = await fetch(url);
+            const data = await res.json();
+
+            const productRoot = document.querySelector('.thanh-toan .products-block');
+            
+            let priceSum = 0;   // Tổng tiền
+            data.productCartDtos.$values.forEach(product => {
+                priceSum += product.Price * product.Quantity;
+            });
+
+            const html = `
+                <h2 class="title">Đơn hàng (${data.productCartDtos.$values.length} sản phẩm)</h2>
+                <div class="products">
+                    ${data.productCartDtos.$values.map(item => {
+                        return `
+                            <div class="item">
+                                <div class="img-block">
+                                    <img src="${item.DefaultImage}" alt="">
+                                    <span>${item.Quantity}</span>
+                                </div>
+                                <div class="product-name">${item.Name}</div>
+                                <div class="product-price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(item.Price)}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+                <div class="price-sum">
+                    <p>Tổng cộng</p>
+                    <span>${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(priceSum)}</span>
+                </div>
+                <div class="actions">
+                    <a href="/">Quay về trang chủ</a>
+                    <button type="button" class="btn">ĐẶT HÀNG</button>
+                </div>
+                <div class="desc">
+                    <p>- Giá trên chưa bao gồm phí vận chuyển. Phí vận chuyển sẽ được nhân viên báo khi xác nhận đơn hàng.</p>
+                    <p>
+                        - Thời gian xử lý đơn hàng: Từ 8h00- 17h thứ 2 đến thứ 7. Các đơn hàng sau thời gian này sẽ được xử 
+                        lý vào ngày làm việc tiếp theo.
+                    </p>
+                </div>
+            `;
+
+            productRoot.innerHTML = html;
+        }
+
+        displayInfoUser();
+        displayProducts(cookieUser);
+    </script>
+</body>
+</html>
