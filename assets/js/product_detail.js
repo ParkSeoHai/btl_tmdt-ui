@@ -55,8 +55,12 @@ async function DisplayProductDetail(product) {
             </span>
         </div>
         <div class="price-box">
+<<<<<<< HEAD
             <span class="special-price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceNew)}</span>
             <span class="price-hidden" style="visibility: hidden;">${product.PriceNew}</span>
+=======
+            <span class="special-price">${product.PriceNew} </span><span>₫</span>
+>>>>>>> 5c2af451ab167abeffcd531fc7c49d5331d135d2
             <span class="old-price">
                 <span class="text">Giá niêm yết: </span>
                 <del>${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceOld)}</del>
