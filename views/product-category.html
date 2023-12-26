@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Thanh lý</title>
+  <meta name="description" content="Thanh lý">
+  <meta name="keywords" content="Thanh lý"/>
+  <meta name='revisit-after' content='1 days'/>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <meta name="viewport" content="width=device-width, minimum-scale=1 user-scalable=no">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/sale-off.css"/>
+  <link href="../assets/css/breadcum.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+        <div id="top-header">
+            <div class="top-header-logo">
+                <a href="/">
+                  <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="top-header-center">
+                <div class="top-header-center-hotline">
+                    <i class="hotline-map bi bi-telephone-fill"></i>
+                    <span>HOTLINE:</span>
+                    <a href="tel:+84379885603">
+                      0379885603 | 0333301536
+                    </a>
+                </div>
+                <div class="top-header-center-liststore">
+                    <i class="hotline-map bi bi-map-fill"></i>
+                    <a href="/views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
+                </div>
+                <div class="top-header-center-searchmember">
+                    <input type="text" placeholder="Tìm sản phẩm...">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+            <div class="top-header-left">
+              <div class="top-header-left-btn search-btn">
+                  <div class="top-header-left-btn-icon">
+                      <i class="bi bi-binoculars-fill"></i>
+                  </div>
+                  <span>TRA CỨU</span>
+                  <div class="search-list arrow-menu">
+                      <ul>
+                          <li><a href="/views/search-orders.html">Kiểm tra đơn hàng</a></li>
+                          <li><a href="/views/search-warranty.html">Kiểm tra bảo hành</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="top-header-left-btn acc-btn">
+                <div class="top-header-left-btn-icon">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <span>TÀI KHOẢN</span>
+                <div class="acc-list arrow-menu">
+                  <ul>
+                      <li>
+                          <a href="/views/login-view.html">
+                              <i class="bi bi-box-arrow-in-right icon"></i>
+                              <span>Đăng nhập</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="/views/register-view.html">
+                              <i class="bi bi-person-add icon"></i>
+                              <span>Đăng ký</span>
+                          </a>
+                      </li>
+                  </ul>
+                  <!-- Menu user login -->
+                  <!-- <ul>
+                    <li>
+                        <a href="#">
+                            <span>Trang cá nhân</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dang-xuat">
+                            <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="basket top-header-left-btn basket-list">
+                <div class="top-header-left-btn-icon cart-icon-quantity">
+                    <!-- <i class="bi bi-cart-fill"></i>
+                    <p>0</p> -->
+                </div>
+                <span>GIỎ HÀNG</span>
+                <div class="basket-member">
+                    <!-- Giỏ hàng trống -->
+                    <!-- <div class="basket-empty">
+                      <i class="bi bi-bag-plus"></i>
+                      <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                    </div> -->
+                    
+                    <!-- Giỏ hàng có sản phẩm -->
+                    <!-- <div class="basket-not-empty">
+                      <div class="title_cart-header">
+                        <a href="views/shoe-cart.html">Giỏ hàng</a>
+                      </div>
+
+                      <div class="cart_body-header">
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cart-bottom-header">
+                        <div class="cart-bottom-price d-flex justify-content-between">
+                          <span>Tổng tiền</span>
+                          <span>1.777.444 đ</span>
+                        </div>
+                        <button type="button" class="btn">Đặt hàng</button>
+                      </div>
+                    </div> -->
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <ul>
+            <li><a href="../index.html">TRANG CHỦ</a></li>
+            <li class="bottom-header-listmember">
+              <a href="#" class="dropdown">SẢN PHẨM
+                  <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="list-menu">
+                <div class="row list-menu-row">
+                  <!-- <div class="col list-menu-member">
+                    <div class="col-heading">
+                        <a class="col-header" href="">VỢT CẦU LÔNG</a>
+                    </div>
+                    <ul class="d-inline">
+                        <li><a href="">Vợt cầu lông Yonex</a></li>
+                        <li><a href="">Vợt cầu lông Victor</a></li>
+                        <li><a href="">Vợt cầu lông Lining</a></li>
+                        <li><a href="">Vợt Cầu Lông Mizuno</a></li>
+                        <li><a href="">Vợt Cầu Lông Apacs</a></li>
+                    </ul>
+                    <a class="col-footer" href="">Xem thêm</a>
+                  </div> -->
+                </div>
+              </div>
+            </li>
+            <li><a href="/views/sale-off-view.html">SALE OFF</a></li>
+            <li><a href="/views/tintuc-view.html">TIN TỨC</a></li>
+            <li><a href="#">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
+            <li class="list-train">
+                <a href="#" class="dropdown">HƯỚNG DẪN
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="list-train-member">
+                    <li><a href="/views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
+                    <!-- <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+                    <li><a href="">Công nghệ sản phẩm</a></li> -->
+                </ul>
+            </li>
+            <li><a href="/views/introduction-view.html">GIỚI THIỆU</a></li>
+            <li><a href="/views/contact-view.html">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+</header>
+  <!--body-->
+  <div class="bodywrap">
+    <div class="layout-collection">
+      <div class="container">
+        <div class="row">
+          <aside class="dqdt-sidebar sidebar col-lg-3 col-12">
+            <div class="section-box-bg">
+              <div class="filter-content">
+                <div class="filter-container">
+                  <div class="filter-container__selected-filter" style="display: none;">
+                    <div class="filter-container__selected-filter-header clearfix">
+                      <span class="filter-container__selected-filter-header-title">
+                          <i class="fa fa-arrow-left hidden-sm-up"></i>
+                          Bạn chọn
+                      </span>
+                    </div>
+                    <div class="filter-container__selected-filter-list">
+                      <ul></ul>
+                    </div>
+                  </div>
+                  <aside class="aside-item filter-price">
+                    <div class="aside-title">
+                      <h2>
+                        <span>Chọn mức giá</span>
+                      </h2>
+                    </div>
+                    <div class="aside-content filter-group content_price">
+                      <ul>
+                        <li class="filter-item filter-item--check-box filter-item--green">
+                                                      <span>
+                                                          <label for="filter-duoi-500-000d">
+                                                              <input type="checkbox" id="filter-duoi-500-000d" onchange="toggleFilter(this);" data-group="Khoảng giá" data-field="gia" data-text="Dưới 500.000đ" value="0-500000" data-operator="OR">
+                                                              <i class="fa"></i>
+                                                              Giá dưới 500.000đ
+
+                                                          </label>
+                                                      </span>
+                        </li>
+                        <li class="filter-item filter-item--check-box filter-item--green">
+                                                      <span>
+                                                          <label for="filter-500-000d-1000-000d">
+                                                              <input type="checkbox" id="filter-500-000d-1000-000d" onchange="toggleFilter(this)" data-group="Khoảng giá" data-field="gia" data-text="500.000đ - 1 triệu" value="500000-1000000" data-operator="OR">
+                                                              <i class="fa"></i>
+                                                              500.000đ - 1 triệu
+
+                                                          </label>
+                                                      </span>
+                        </li>
+                        <li class="filter-item filter-item--check-box filter-item--green">
+                                                      <span>
+                                                          <label for="filter-1000-000d-2000-000d">
+                                                              <input type="checkbox" id="filter-1000-000d-2000-000d" onchange="toggleFilter(this)" data-group="Khoảng giá" data-field="gia" data-text="1 - 2 triệu" value="1000000-2000000" data-operator="OR">
+                                                              <i class="fa"></i>
+                                                              1 - 2 triệu
+
+                                                          </label>
+                                                      </span>
+                        </li>
+                        <li class="filter-item filter-item--check-box filter-item--green">
+                                                      <span>
+                                                          <label for="filter-2000-000d-3000-000d">
+                                                              <input type="checkbox" id="filter-2000-000d-3000-000d" onchange="toggleFilter(this)" data-group="Khoảng giá" data-field="gia" data-text="2 - 3 triệu" value="2000000-3000000" data-operator="OR">
+                                                              <i class="fa"></i>
+                                                              2 - 3 triệu
+
+                                                          </label>
+                                                      </span>
+                        </li>
+                        <li class="filter-item filter-item--check-box filter-item--green">
+                                                      <span>
+                                                          <label for="filter-tren3-000-000d">
+                                                              <input type="checkbox" id="filter-tren3-000-000d" onchange="toggleFilter(this)" data-group="Khoảng giá" data-field="gia" data-text="Trên 3 triệu" value="3000000-0" data-operator="OR">
+                                                              <i class="fa"></i>
+                                                              Giá trên 3 triệu
+
+                                                          </label>
+                                                      </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </aside>
+                  <aside class="aside-item filter-vendor">
+                    <div class="aside-title">
+                      <h2 class="title-head margin-top-0">
+                        <span>Chi nhánh</span>
+                      </h2>
+                    </div>
+                    <div class="aside-content filter-group">
+                      <ul class="filter-cn">
+                        <li class="filter-item filter-item--check-box filter-item--green ">
+                          <label data-filter="filter-cn-78" for="filter-cn-78" class="cn-78">
+                            <input type="checkbox" id="filter-cn-78" onChange="toggleFilter(this)" data-group="Chi nhánh" data-field="chi_nhanh" data-text="Cửa hàng của Huy" value="78" data-operator="OR">
+                            <i class="fa"></i>
+                            Cửa hàng của Huy
+
+                          </label>
+                        </li>
+                        <li class="filter-item filter-item--check-box filter-item--green ">
+                          <label data-filter="filter-cn-37" for="filter-cn-37" class="cn-37">
+                            <input type="checkbox" id="filter-cn-37" onChange="toggleFilter(this)" data-group="Chi nhánh" data-field="chi_nhanh" data-text="Cửa hàng của Hiếu" value="37" data-operator="OR">
+                            <i class="fa"></i>
+                            Cửa hàng của Hiếu
+
+                          </label>
+                        </li>
+                        <li class="filter-item filter-item--check-box filter-item--green ">
+                          <label data-filter="filter-cn-27" for="filter-cn-27" class="cn-27">
+                            <input type="checkbox" id="filter-cn-27" onChange="toggleFilter(this)" data-group="Chi nhánh" data-field="chi_nhanh" data-text="Cửa hàng của Hải" value="27" data-operator="OR">
+                            <i class="fa"></i>
+                            Cửa hàng của Hải
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <aside class="aside-item collection-category aside-cate">
+                <div class="aside-title">Danh mục sản phẩm
+                </div>
+                <div class="aside-content aside-content-sub clearfix">
+                  <ul class="navbar-pills nav-category">
+                    <li class="nav-item active">
+                      <a href="/thanh-ly" class="nav-link">Tất cả danh mục</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Vợt Cầu Lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Giày Cầu Lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Áo Cầu Lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Váy cầu lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Quần Cầu Lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Túi Vợt Cầu Lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Balo Cầu Lông</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Phụ Kiện Cầu Lông</a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+
+              <div class="clearfix"></div>
+            </div>
+          </aside>
+          <div class="block-collection col-lg-9 col-12">
+            <div class="section-box-bg">
+              <div class="category-products products clearfix">
+                <div class="pottion">
+                  <h1 class="title-page d-md-block d-none"></h1>
+                </div>
+                <div class="products-view products-view-grid list_hover_pro">
+                  <div class="row product-sale-container">
+                    <!-- <div class="col-6 col-md-3">
+                      <div class="item_product_main">
+                        <div class="product-thumbnail">
+                          <a class="product_overlay" href="#" title="Áo cầu lông Kumpoo KW 1208 nữ chính hãng - Size: XL"></a>
+                          <a class="image_thumb" href="#" title="Áo cầu lông Kumpoo KW 1208 nữ chính hãng - Size: XL">
+                            <img width="300" height="300" class="lazyload loaded" src="../assets/img/sale-off/anh1.jpg" data-src="../assets/img/sale-off/anh1.jpg" alt="Áo cầu lông Kumpoo KW 1208 nữ chính hãng - Size: XL" data-was-processed="true">
+                          </a>
+                          <span class="smart">Giảm 70%</span>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name">
+                            <a href="#" title="Áo cầu lông Kumpoo KW 1208 nữ chính hãng - Size: XL">Áo cầu lông Kumpoo KW 1208 nữ chính hãng - Size: XL</a>
+                          </h3>
+                          <div class="price-box">
+                            <span class="price">135.000 ₫</span>
+                            <span class="compare-price">450.000 ₫</span>
+                          </div>
+                          <div>
+                            <b>Cửa hàng của Huy</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <!-- <div class="pagenav">
+                  <nav class="collection-paginate clearfix relative nav_pagi w_100">
+                    <ul class="pagination clearfix">
+                      <li class="current">
+                      <li class="active page-item disabled">
+                        <a class="page-link" href="javascript:;">
+                          <span class="pss"></span>
+                          1
+                        </a>
+                      </li>
+                      </li>
+                      <li class="page-item ">
+                        <a class="page-link">
+                          <span class="pss"></span>
+                          2
+                        </a>
+                      </li>
+                      <li class="page-item ">
+                        <a class="page-link">
+                          <span class="pss"></span>
+                          3
+                        </a>
+                      </li>
+                      <li class="page-item ">
+                        <a class="page-link">
+                          <span class="pss"></span>
+                          4
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link">»</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="open-filters" class="open-filters d-lg-none d-xl-none">
+          <span>Lọc</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h4 class="title-menu">Thông tin chung</h4>
+          <div class="des_foo">
+            <p>
+              <b>VNB Sports</b>
+              là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp
+              sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp
+            </p>
+            <p>
+              <b>Với sứ mệnh:</b>
+              <em>
+                "VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho
+                người chơi thể thao để nâng cao sức khỏe của chính mình."
+              </em>
+            </p>
+            <p>
+              <b>Tầm nhìn:</b>
+              <em>
+                "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"
+              </em>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 ps-4">
+          <h4 class="title-menu">Thông tin liên hệ</h4>
+          <div class="des_foo">
+            <p>
+              <b>Nguyễn Văn Hải</b>
+            </p>
+            <p>
+              <b>Đỗ Minh Hiếu</b>
+            </p>
+            <p>
+              <b>Phan Đức Huy</b>
+            </p>
+            <p>
+              <b>Hotline:</b>
+              0355063692 | 0785277320
+            </p>
+            <p>
+              <b>Email:</b>
+              info@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h4 class="title-menu">Chính sách</h4>
+          <ul class="list">
+            <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+            <li class="item"><a href="#">Chính sách bảo hành</a></li>
+            <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+            <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+            <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+            <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h4 class="title-menu">Hướng dẫn</h4>
+          <ul class="list">
+            <li class="item"><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+            <li class="item"><a href="#">Chính sách bảo hành</a></li>
+            <li class="item"><a href="#">Chính sách xử lý khiếu nại</a></li>
+            <li class="item"><a href="#">Chính sách vận chuyển</a></li>
+            <li class="item"><a href="#">Điều khoản sử dụng</a></li>
+            <li class="item"><a href="#">Chính sách bảo mật thông tin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/cart.js"></script>
+  <script>
+    function productCategory() {
+      const subCategoryId = localStorage.getItem('subCategoryId');
+      // Lấy sản phẩm theo sub category
+      if(subCategoryId) {
+        const url = `https://localhost:44360/api/Product/GetProductBySubCategory/${subCategoryId}`;
+        fetch(url)
+          .then(response => {
+              // Check response code 200
+              if(response.ok) {
+                  return response.json();
+              } else {
+                  throw new Error('Something went wrong');
+              }
+          })
+          .then(data => {
+            const title = document.querySelector('.title-page');
+            title.innerHTML = data.Name;
+            if(data.Products.$values.length > 0) {
+              // Hiển thị sản phẩm
+              const productContainer = document.querySelector('.product-sale-container');
+              data.Products.$values.forEach(product => {
+                const html = `
+                  <div class="col-6 col-md-3">
+                    <div class="item_product_main">
+                      <div class="product-thumbnail">
+                        <a class="product_overlay" data-id=${product.Id} href="${product.Name}" title="${product.Name}"></a>
+                        <a class="image_thumb" data-id=${product.Id} href="${product.Name}" title="${product.Name}">
+                          <img width="300" height="300" class="lazyload loaded" src="${product.DefaultImage}" alt="${product.Name}" data-was-processed="true">
+                        </a>
+                        <span class="smart">Giảm ${product.Discount}%</span>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name">
+                          <a href="${product.Name}" data-id=${product.Id} class="pro-sale-link" title="${product.Name}">${product.Name}</a>
+                        </h3>
+                        <div class="price-box">
+                          <span class="price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.Price)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+
+                productContainer.innerHTML += html;
+              });
+
+              // Click vào sản phẩm
+              const productLinks = document.querySelectorAll('.item_product_main a');
+              productLinks.forEach(productLink => {
+                productLink.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  console.log(productLink.dataset.id);
+                  localStorage.setItem('proId', productLink.dataset.id);
+                  window.location.href = '../views/productDetail.html';
+                });
+              });
+            }
+          })
+          .catch(error => {
+              console.log(error);
+          });
+      } else {    // Lấy sản phẩm theo category
+        const categoryId = localStorage.getItem('CategoryId');
+        const url = `https://localhost:44360/api/Product/GetProductByCategory/${categoryId}`;
+        fetch(url)
+          .then(response => {
+              // Check response code 200
+              if(response.ok) {
+                  return response.json();
+              } else {
+                  throw new Error('Something went wrong');
+              }
+          })
+          .then(data => {
+            const title = document.querySelector('.title-page');
+            title.innerHTML = data.$values[0].CategoryName;
+            if(data.$values.length > 0) {
+              // Hiển thị sản phẩm
+              const productContainer = document.querySelector('.product-sale-container');
+              data.$values.forEach(product => {
+                const html = `
+                  <div class="col-6 col-md-3">
+                    <div class="item_product_main">
+                      <div class="product-thumbnail">
+                        <a class="product_overlay" data-id=${product.Id} href="${product.Name}" title="${product.Name}"></a>
+                        <a class="image_thumb" data-id=${product.Id} href="${product.Name}" title="${product.Name}">
+                          <img width="300" height="300" class="lazyload loaded" src="${product.DefaultImage}" alt="${product.Name}" data-was-processed="true">
+                        </a>
+                        <span class="smart">Giảm ${product.Discount}%</span>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name">
+                          <a href="${product.Name}" data-id=${product.Id} class="pro-sale-link" title="${product.Name}">${product.Name}</a>
+                        </h3>
+                        <div class="price-box">
+                          <span class="price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceNew)}</span>
+                          <span class="compare-price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceOld)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+
+                productContainer.innerHTML += html;
+              });
+
+              // Click vào sản phẩm
+              const productLinks = document.querySelectorAll('.item_product_main a');
+              productLinks.forEach(productLink => {
+                productLink.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  console.log(productLink.dataset.id);
+                  localStorage.setItem('proId', productLink.dataset.id);
+                  window.location.href = '../views/productDetail.html';
+                });
+              });
+            }
+          })
+          .catch(error => {
+              console.log(error);
+          });
+      }
+    }
+
+    productCategory();
+  </script>
+</body>
+</html>

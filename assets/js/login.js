@@ -19,10 +19,11 @@ async function login(data) {
                 response.json().then(data => {
                     // Set local storage userId
                     window.localStorage.setItem("userId", data);
-                    console.log(data);
                 });
                 // Redirect
                 window.location.replace(window.location.origin.concat("/"));
+                // Display a success toast, with a title
+                toastr.success('Đăng nhập thành công', 'Chào mừng bạn đến với Shop');
             } else if (response.status == 404) {
                 loaderElement.style.display = 'none';
                 const messageError = document.querySelector(".message-error");

@@ -16,19 +16,21 @@
     <div class="container">
         <div id="top-header">
             <div class="top-header-logo">
-                <a href="../index.html">
-                    <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
+                <a href="/">
+                  <img src="../assets/img/Logo/Logo-thaythe.jpg" alt="Logo">
                 </a>
             </div>
             <div class="top-header-center">
                 <div class="top-header-center-hotline">
                     <i class="hotline-map bi bi-telephone-fill"></i>
                     <span>HOTLINE:</span>
-                    <a href="">0379885603 | 0333301536</a>
+                    <a href="tel:+84379885603">
+                      0379885603 | 0333301536
+                    </a>
                 </div>
                 <div class="top-header-center-liststore">
                     <i class="hotline-map bi bi-map-fill"></i>
-                    <a href="../views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
+                    <a href="/views/store-system.html">HỆ THỐNG CỬA HÀNG</a>
                 </div>
                 <div class="top-header-center-searchmember">
                     <input type="text" placeholder="Tìm sản phẩm...">
@@ -36,165 +38,257 @@
                 </div>
             </div>
             <div class="top-header-left">
-                <div class="top-header-left-btn search-btn">
-                    <div class="top-header-left-btn-icon">
-                        <i class="bi bi-binoculars-fill"></i>
-                    </div>
-                    <span>TRA CỨU</span>
-                    <div class="search-list arrow-menu">
-                        <ul>
-                            <li><a href="../views/search-orders.html">Kiểm tra đơn hàng</a></li>
-                            <li><a href="../views/search-warranty.html">Kiểm tra bảo hành</a></li>
-                        </ul>
-                    </div>
+              <div class="top-header-left-btn search-btn">
+                  <div class="top-header-left-btn-icon">
+                      <i class="bi bi-binoculars-fill"></i>
+                  </div>
+                  <span>TRA CỨU</span>
+                  <div class="search-list arrow-menu">
+                      <ul>
+                          <li><a href="/views/search-orders.html">Kiểm tra đơn hàng</a></li>
+                          <li><a href="/views/search-warranty.html">Kiểm tra bảo hành</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="top-header-left-btn acc-btn">
+                <div class="top-header-left-btn-icon">
+                    <i class="bi bi-person-circle"></i>
                 </div>
-                <div class="top-header-left-btn acc-btn">
-                    <div class="top-header-left-btn-icon">
-                        <i class="bi bi-person-circle"></i>
-                    </div>
-                    <span>TÀI KHOẢN</span>
-                    <div class="acc-list arrow-menu">
-                        <ul>
-                            <li>
-                                <a href="../views/login-view.html">
-                                    <i class="bi bi-box-arrow-in-right icon"></i>
-                                    <span>Đăng nhập</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../views/register-view.html">
-                                    <i class="bi bi-person-add icon"></i>
-                                    <span>Đăng ký</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <span>TÀI KHOẢN</span>
+                <div class="acc-list arrow-menu">
+                  <ul>
+                      <li>
+                          <a href="/views/login-view.html">
+                              <i class="bi bi-box-arrow-in-right icon"></i>
+                              <span>Đăng nhập</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="/views/register-view.html">
+                              <i class="bi bi-person-add icon"></i>
+                              <span>Đăng ký</span>
+                          </a>
+                      </li>
+                  </ul>
+                  <!-- Menu user login -->
+                  <!-- <ul>
+                    <li>
+                        <a href="#">
+                            <span>Trang cá nhân</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dang-xuat">
+                            <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                  </ul> -->
                 </div>
-                <a href="../views/shopping-cart.html"><div class="basket top-header-left-btn basket-list">
-                    <div class="top-header-left-btn-icon">
-                        <i class="bi bi-cart-fill"></i>
-                        <p>0</p>
-                    </div>
-                    <span>GIỎ HÀNG</span>
-                    <div class="basket-member">
-                        <i class="bi bi-bag-plus"></i>
-                        <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
-                    </div>
-                </div></a>
+              </div>
+              <div class="basket top-header-left-btn basket-list">
+                <div class="top-header-left-btn-icon cart-icon-quantity">
+                    <!-- <i class="bi bi-cart-fill"></i>
+                    <p>0</p> -->
+                </div>
+                <span>GIỎ HÀNG</span>
+                <div class="basket-member">
+                    <!-- Giỏ hàng trống -->
+                    <!-- <div class="basket-empty">
+                      <i class="bi bi-bag-plus"></i>
+                      <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                    </div> -->
+                    
+                    <!-- Giỏ hàng có sản phẩm -->
+                    <!-- <div class="basket-not-empty">
+                      <div class="title_cart-header">
+                        <a href="views/shoe-cart.html">Giỏ hàng</a>
+                      </div>
+
+                      <div class="cart_body-header">
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="cart-item-header">
+                          <div class="cart-item-header-img">
+                            <a href="">
+                              <img src="https://shopvnb.com/img/180x180//uploads/gallery/giay-cau-long-mizuno-wave-claw-el-2-trang-xanh-bien-chinh-hang-71ga228020_1701804420.webp" alt="">
+                            </a>
+                          </div>
+                          <div class="cart-item-info-header">
+                            <div class="cart-item-name-header">
+                              <a href="">Vợt cầu lông Yonex Astrox 100ZZ</a>
+                              <div class="icon">
+                                <i class="bi bi-x-circle"></i>
+                              </div>
+                            </div>
+                            <div class="cart-item-name-bottom mt-2 d-flex align-items-center justify-content-between">
+                              <div class="d-flex cart-quantity">
+                                <button type="button">-</button>
+                                <input type="text" name="cart-quantity" value="1" min="1">
+                                <button type="button">+</button>
+                              </div>
+                              <div class="cart-price">
+                                <span>1.790.000 ₫</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cart-bottom-header">
+                        <div class="cart-bottom-price d-flex justify-content-between">
+                          <span>Tổng tiền</span>
+                          <span>1.777.444 đ</span>
+                        </div>
+                        <button type="button" class="btn">Đặt hàng</button>
+                      </div>
+                    </div> -->
+                </div>
             </div>
+          </div>
         </div>
     </div>
     <div class="bottom-header">
         <ul>
             <li><a href="../index.html">TRANG CHỦ</a></li>
             <li class="bottom-header-listmember">
-                <a href="" class="dropdown">SẢN PHẨM
-                    <i class="bi bi-chevron-down"></i>
-                </a>
-                <div class="list-menu">
-                    <div class="row">
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">VỢT CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Vợt cầu lông Yonex</a></li>
-                                <li><a href="">Vợt cầu lông Victor</a></li>
-                                <li><a href="">Vợt cầu lông Lining</a></li>
-                                <li><a href="">Vợt Cầu Lông Mizuno</a></li>
-                                <li><a href="">Vợt Cầu Lông Apacs</a></li>
-                                <li><a href="">Vợt Cầu Lông VNB</a></li>
-                                <li><a href="">Vợt cầu lông Proace</a></li>
-                                <li><a href="">Vợt cầu lông Forza</a></li>
-                                <li><a href="">Vợt Cầu Lông FlyPower</a></li>
-                                <li><a href="">Vợt Cầu Lông Tenway</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">GIÀY CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Giày cầu lông Yonex</a></li>
-                                <li><a href="">Giày cầu lông Victor</a></li>
-                                <li><a href="">Giày cầu lông Lining</a></li>
-                                <li><a href="">Giày Cầu Lông Kawasaki</a></li>
-                                <li><a href="">Giày Cầu Lông Mizuno</a></li>
-                                <li><a href="">Giày Cầu Lông Kumpoo</a></li>
-                                <li><a href="">Giày cầu lông Promax</a></li>
-                                <li><a href="">Giày cầu lông Babolat</a></li>
-                                <li><a href="">Giày Cầu Lông Sunbatta</a></li>
-                                <li><a href="">Giày Cầu Lông Apacs</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">ÁO CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Áo cầu lông Yonex</a></li>
-                                <li><a href="">Áo cầu lông VNB</a></li>
-                                <li><a href="">Áo cầu lông Kamito</a></li>
-                                <li><a href="">Áo Cầu Lông Victo</a></li>
-                                <li><a href="">Áo Cầu Lông Lining</a></li>
-                                <li><a href="">Áo Cầu Lông DonexPro</a></li>
-                                <li><a href="">Áo cầu lông Alien Armour</a></li>
-                                <li><a href="">Áo cầu lông SFD</a></li>
-                                <li><a href="">Áo Cầu Lông Kawasaki</a></li>
-                                <li><a href="">Áo Cầu Lông Pebble Beach</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">VÁY CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Váy cầu lông Yonex</a></li>
-                                <li><a href="">Váy cầu lông Victec</a></li>
-                                <li><a href="">Váy cầu lông Lining</a></li>
-                                <li><a href="">Váy Cầu Lông DonexPro</a></li>
-                                <li><a href="">Váy Cầu Lông Victor</a></li>
-                            </ul>
-                        </div>
-                        <div class="col list-menu-member">
-                            <div class="col-heading">
-                                <a class="col-header" href="">QUẦN CẦU LÔNG</a>
-                            </div>
-                            <ul class="d-inline">
-                                <li><a href="">Quần cầu lông Yonex</a></li>
-                                <li><a href="">Quần cầu lông Victor</a></li>
-                                <li><a href="">Quần cầu lông Lining</a></li>
-                                <li><a href="">Quần Cầu Lông VNB</a></li>
-                                <li><a href="">Quần Cầu Lông SFD</a></li>
-                                <li><a href="">Quần Cầu Lông DonexPro</a></li>
-                                <li><a href="">Quần cầu lông Apacs</a></li>
-                                <li><a href="">Quần cầu lông Alien Amour</a></li>
-                                <li><a href="">Quần Cầu Lông Mizuno</a></li>
-                                <li><a href="">Quần Cầu Lông Kawasaki</a></li>
-                            </ul>
-                            <a class="col-footer" href="">Xem thêm</a>
-                        </div>
+              <a href="#" class="dropdown">SẢN PHẨM
+                  <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="list-menu">
+                <div class="row list-menu-row">
+                  <!-- <div class="col list-menu-member">
+                    <div class="col-heading">
+                        <a class="col-header" href="">VỢT CẦU LÔNG</a>
                     </div>
+                    <ul class="d-inline">
+                        <li><a href="">Vợt cầu lông Yonex</a></li>
+                        <li><a href="">Vợt cầu lông Victor</a></li>
+                        <li><a href="">Vợt cầu lông Lining</a></li>
+                        <li><a href="">Vợt Cầu Lông Mizuno</a></li>
+                        <li><a href="">Vợt Cầu Lông Apacs</a></li>
+                    </ul>
+                    <a class="col-footer" href="">Xem thêm</a>
+                  </div> -->
                 </div>
+              </div>
             </li>
-            <li><a href="">SALE OFF</a></li>
-            <li><a href="../views/tintuc-view.html">TIN TỨC</a></li>
-            <li><a href="">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
+            <li><a href="/views/sale-off-view.html">SALE OFF</a></li>
+            <li><a href="/views/tintuc-view.html">TIN TỨC</a></li>
+            <li><a href="#">CHÍNH SÁCH NHƯỢNG QUYỀN</a></li>
             <li class="list-train">
-                <a href="" class="dropdown">HƯỚNG DẪN
+                <a href="#" class="dropdown">HƯỚNG DẪN
                     <i class="bi bi-chevron-down"></i>
                 </a>
                 <ul class="list-train-member">
-                    <li><a href="../views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
-                    <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
-                    <li><a href="">Công nghệ sản phẩm</a></li>
+                    <li><a href="/views/train-pay-view.html">Hướng dẫn thanh toán</a></li>
+                    <!-- <li><a href="">Hướng dẫn chọn vợt cầu lông</a></li>
+                    <li><a href="">Công nghệ sản phẩm</a></li> -->
                 </ul>
             </li>
-            <li><a href="">GIỚI THIỆU</a></li>
-            <li><a href="../views/contact-view.html">LIÊN HỆ</a></li>
+            <li><a href="/views/introduction-view.html">GIỚI THIỆU</a></li>
+            <li><a href="/views/contact-view.html">LIÊN HỆ</a></li>
         </ul>
     </div>
 </header>
@@ -292,5 +386,7 @@
 </footer>
 
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets//js/header.js"></script>
+<script src="../assets/js/cart.js"></script>
 </body>
 </html>

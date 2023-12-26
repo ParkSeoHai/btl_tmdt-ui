@@ -66,7 +66,20 @@ async function displayCategoryHeader(categories) {
             e.preventDefault();
             const subCategoryId = e.target.dataset.id;
             localStorage.setItem('subCategoryId', subCategoryId);
-            // window.location.href = '/views/sale-off-view.html';
+            localStorage.removeItem('CategoryId');
+            window.location.href = '/views/product-category.html';
+        });
+    });
+
+    // Xử lý sự kiện click category
+    const categoriesHeader = document.querySelectorAll('#header .bottom-header .list-menu-row .col-heading a');
+    categoriesHeader.forEach(categoryHeader => {
+        categoryHeader.addEventListener('click', (e) => {
+            e.preventDefault();
+            const categoryId = e.target.dataset.id;
+            localStorage.setItem('CategoryId', categoryId);
+            localStorage.removeItem('subCategoryId');
+            window.location.href = '/views/product-category.html';
         });
     });
 }

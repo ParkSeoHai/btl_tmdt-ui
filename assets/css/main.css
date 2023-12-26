@@ -1201,3 +1201,162 @@ h1.title-head{
   padding-left: 0;
 }
 
+/* Thanh toán */
+.thanh-toan {
+  padding-left: 35px;
+}
+
+.thanh-toan .shop-name a {
+  color: var(--color-primary);
+  font-size: 3.6rem;
+  padding: 20px 0;
+}
+
+.thanh-toan .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.thanh-toan .info label {
+  color: #777;
+}
+
+.thanh-toan .info input {
+  font-size: 1.6rem;
+  height: 6rem;
+}
+
+.thanh-toan .payment-methods .block {
+  padding: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.thanh-toan .payment-methods input {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 16px;
+}
+
+.thanh-toan .payment-methods label {
+  font-size: 1.6rem;
+  color: #737373;
+}
+
+.thanh-toan .payment-methods .block-atm {
+  display: none;
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #eee;
+}
+
+.thanh-toan .payment-methods .block-atm p {
+  color: #737373;
+  margin-bottom: 6px;
+}
+
+.thanh-toan .products-block {
+  background-color: rgb(243, 240, 240);
+  padding-left: 30px;
+  padding-right: 35px;
+}
+
+.thanh-toan .products-block .products {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #888;
+}
+
+.thanh-toan .products-block .title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 20px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #888;
+}
+
+.thanh-toan .products-block .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.thanh-toan .products-block .item .img-block {
+  position: relative;
+}
+
+.thanh-toan .products-block .item .img-block span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.thanh-toan .products-block .item img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #777;
+  border-radius: 6px;
+}
+
+.thanh-toan .products-block .item .product-name {
+  padding-left: 20px;
+  color: #555;
+  line-height: 24px;
+}
+
+.thanh-toan .products-block .item .product-price {
+  display: block;
+  min-width: 120px;
+  padding-left: 20px;
+  color: #555;
+  text-align: end;
+}
+
+.thanh-toan .products-block .price-sum {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.thanh-toan .products-block .price-sum span {
+  font-size: 2rem;
+}
+
+.thanh-toan .products-block .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.thanh-toan .products-block .actions a {
+  color: var(--color-primary);
+}
+
+.thanh-toan .products-block .actions button {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 6px 40px;
+}
+
+.thanh-toan .products-block .desc {
+  padding-bottom: 20px;
+}
+
+.thanh-toan .products-block .desc p {
+  margin-top: 10px;
+  color: #777;
+  line-height: 24px;
+  font-style: italic;
+}

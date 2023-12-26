@@ -55,10 +55,15 @@ async function DisplayProductDetail(product) {
             </span>
         </div>
         <div class="price-box">
+<<<<<<< HEAD
+            <span class="special-price">${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceNew)}</span>
+            <span class="price-hidden" style="visibility: hidden;">${product.PriceNew}</span>
+=======
             <span class="special-price">${product.PriceNew} </span><span>₫</span>
+>>>>>>> 5c2af451ab167abeffcd531fc7c49d5331d135d2
             <span class="old-price">
                 <span class="text">Giá niêm yết: </span>
-                <del>${product.PriceOld} ₫</del>
+                <del>${new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.PriceOld)}</del>
             </span>
         </div>
         <div class="pro-discount">
@@ -231,7 +236,7 @@ async function HandleAddCart() {
     const sessionId = document.cookie.split('; ').find(row => row.startsWith('cookieUser')).split('=')[1];
     const productId = document.querySelector('.product-detail-right .product-top .code').textContent;
     const quantity = document.querySelector('.product-detail-right .input_number_product input').value;
-    const price = document.querySelector('.product-detail-right .price-box .special-price').textContent;
+    const price = document.querySelector('.product-detail-right .price-box .price-hidden').textContent;
     
     const cartInfo = {
         SessionId: sessionId.toString(),
@@ -261,6 +266,7 @@ async function AddProductCart(cartRequest) {
         if (response.ok) {
             // Hiển thị lại cart
             await checkCookieUser();
+            toastr.success('Thêm vào giỏ hàng thành công');
         } else {
             console.error('Error updating cart. Status:', response.status);
         }
